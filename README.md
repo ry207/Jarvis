@@ -57,7 +57,8 @@ Interact with Jarvis by saying or typing the following commands:
   *Example search terms:* `Artificial intelligence`, `Mark Zuckerberg`, `Quantum mechanics`, `Google`, `Airplane`.
 
 - **`computer`** – (You might not want to try this one...)
-- **`Random`** - Tells a random fact.
+- **`random`** - Tells a random fact.
+- **`hack`** - Connect to [Over the wire: Bandit](https://overthewire.org/wargames/bandit/) via ssh for fun hacker challenges
 
 ---
 
@@ -88,6 +89,10 @@ Jarvis responds to the following keywords:
 
 ![Live server created by jarvis](screenshot2.png "Wikipedia page Jarvis downloaded")
 *The page on aerodynamics I had Jarvis download, he then created a live server in which I could view it in!*
+
+![Hacker games](screenshot3.png "Succesfull connection to bandit hacker games")
+*Jarvis succesfully connected to OverTheWire: Bandit via ssh*
+
 
 ---
 
