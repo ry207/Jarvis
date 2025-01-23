@@ -81,6 +81,13 @@ Jarvis responds to the following keywords:
 
 ---
 
+## Screenshots
+
+![Jarvis Basic Functions](screenshot1.png "a title")
+![Live server created by jarvis](screenshot2.png "a title")
+
+---
+
 ## Why I Built Jarvis
 I created Jarvis because I thought it would be fun to have a chatbot that talks back—plus, I had nothing better to do!
 
