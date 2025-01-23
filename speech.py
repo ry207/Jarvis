@@ -43,3 +43,6 @@ if speechOrText == "s":
     speech()
 elif speechOrText == "t":
     text()
+else:
+    print("not an option")
+    exit(13)
