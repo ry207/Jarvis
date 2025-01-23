@@ -1,6 +1,8 @@
 # Jarvis - AI Chatbot
 
 A fully functional chatbot with voice recognition and text input, inspired by J.A.R.V.I.S. from *Iron Man*.
+Jarvis can search wikipedia and download the page, give you the news, tell a random fact and much more!
+I have been working on Jarvis for about a week as of 01/23/25 and i intend on adding more features, please feel free to contribute and suggest new features.
 
 ---
 
