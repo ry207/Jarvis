@@ -38,6 +38,10 @@ Follow these steps to install and run Jarvis:
 ## Features
 Interact with Jarvis by saying or typing the following commands:
 
+- **`help`** - Shows a list of commands you can either say or type.
+- **`shut down`** - Shuts downs the machine.
+- **`system`** - Prompt for a command that will enter in the terminal.
+     *For example:* `ls, echo, rm hello.txt`
 - **`joke`** – Displays a funny animation.
 - **`color`** – Changes the terminal color.
 - **`pause`** – Pauses the microphone.
@@ -45,10 +49,13 @@ Interact with Jarvis by saying or typing the following commands:
 - **`tree`** – Displays active running tasks.
 - **`function`** – Prompts for a word and outputs its length.
 - **`search`** – Prompts for a topic, searches Wikipedia, and provides a brief description (works better in text mode).
+- **`news`** - Displays hacker news titles.
+- **`download`** - Download a wikipedia page to view and save the file to your computer.
   
   *Example search terms:* `Artificial_intelligence`, `Mark_Zuckerberg`, `Quantum_mechanics`, `Google`, `Airplane`.
 
 - **`computer`** – (You might not want to try this one...)
+- **`Random`** - Tells a random fact.
 
 ---
 
