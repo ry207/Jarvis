@@ -3,10 +3,25 @@ import speech_recognition as sr
 from wiki import analizevoice
 import os
 import colorconsole.terminal
+import random
+from wikipage import getpage
 
 # init function to get an engine instance for the speech synthesis 
 engine = pyttsx3.init()
 r = sr.Recognizer()
+
+random_facts = [
+    "Bananas are berries, but strawberries are not.",
+    "Honey never spoils. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old.",
+    "The Eiffel Tower can be 15 cm taller during the summer due to the expansion of metal in the heat.",
+    "Octopuses have three hearts, two pump blood to the gills, and one pumps it to the rest of the body.",
+    "A day on Venus is longer than a year on Venus. It takes 243 Earth days to rotate once but only 225 Earth days to orbit the Sun.",
+    "A crocodile can't stick its tongue out.",
+    "Wombat poop is cube-shaped to prevent it from rolling away.",
+    "The human nose can detect over 1 trillion different scents.",
+    "Cleopatra lived closer in time to the first moon landing than to the construction of the Great Pyramid of Giza.",
+    "Sharks have been around longer than trees. They have existed for over 400 million years."
+]
 
 greetings = ["Hello", "hello", "hello Jarvis", "jarvis", "hey Jarvis", "Jarvis", "come in Jarvis", "how are you", "how are you Jarvis", "what's up"]
 good = ["Good", "good", "great", "okay", "okay jarvis", "thanks", "thanks jarvis", "okay jarvis", "Great", "I'm good", "i'm good", "im good", "i'm okay"]
@@ -19,6 +34,11 @@ def analize(voice):
     if voice == "power off":
         engine.say("Goodbye, Sir")
         exit(69)
+    elif voice == "random":
+        randnum = random.randrange(0,10)
+        random_fact = random_facts[randnum]
+        engine.say(random_fact)
+        print(random_fact)
     elif voice == "joke":
         os.system("curl ascii.live/can-you-hear-me")
         os.system("clear")
@@ -83,6 +103,10 @@ A broad range of industrial and consumer products use computers as control syste
 def analizetext(comm):
     if comm in todo != -1:
         engine.say('Nothing to do sir')
+    elif comm == "wikipage":
+        search = input("Wikipage to get: ")
+        getpage(search)
+        engine.say("Here is your wikipedia page sir.")
     elif comm in greetings != -1:
         engine.say('Hello sir, how may I help you, sir.')
     elif comm in good != -1:
@@ -123,6 +147,14 @@ A broad range of industrial and consumer products use computers as control syste
     elif comm == "tree":
         os.system("pstree")
         engine.say("Here is your active and running tasks tree, sir")
+    elif comm == "random":
+        randnum = random.randrange(0,10)
+        random_fact = random_facts[randnum]
+        engine.say(random_fact)
+        print(random_fact)
+    elif comm == "joke":
+        os.system("curl ascii.live/can-you-hear-me")
+        os.system("clear")
 
     engine.runAndWait()
 
