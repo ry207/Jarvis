@@ -18,6 +18,12 @@ def analizevoice(voice):
     categories = table.find_all('tr')
     #for x in categories:
         #print(x.find('p').text)
+
+    url2  = f"https://en.wikipedia.org/wiki/{voice}"
+    page2 = requests.get(url2).text
+    soup2 = BeautifulSoup(page2, "lxml")
+    page2 = soup2.find('div', class_='mw-body-content')
+    printable = page2.text
     try:
         desc = categories[14].text
         print(desc[19:])
