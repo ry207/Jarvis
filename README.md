@@ -9,20 +9,21 @@ Working chat bot with voice recognition or text input. inspired by JARVIS from I
   run the script with ```python3 speech.py``` 
 
 # Functions
-  say or type the following:
-    joke: displayes a funny animation
-    color: changes the color of the terminal
-    pause: pauses the microphone
-    who am I: displayes network information (may not work on certain devices)
-    tree: displays active running tasks 
-    function: will prompt for a word, after saying/typing word it will output the length of that word
-    search: prompts for a word, then will search wikipedia and give a brief description of the topic(works better in text mode)
-      - format searches like this: Artificial_intelligence, Mark_Zuckerberg, Quantum_mechanics, Google, Airplane
-    computer: you dont want to do this one...
-    any of the following key words:
-      greetings = ["Hello", "hello", "hello Jarvis", "jarvis", "hey Jarvis", "Jarvis", "come in Jarvis", "how are you", "how are you Jarvis", "what's up"]
-      good = ["Good", "good", "great", "okay", "okay jarvis", "thanks", "thanks jarvis", "okay jarvis", "Great", "I'm good", "i'm good", "im good", "i'm okay"]
-      bad = ["bad", "not good", "no", "No"]
+  <ul>say or type the following:
+    <li>joke: displayes a funny animation</li>
+    <li>color: changes the color of the terminal</li>
+    <li>pause: pauses the microphone</li>
+    <li>who am I: displayes network information (may not work on certain devices)</li>
+    <li>tree: displays active running tasks</li>
+    <li>function: will prompt for a word, after saying/typing word it will output the length of that word</li>
+    <li>search: prompts for a word, then will search wikipedia and give a brief description of the topic(works better in text mode)</li>
+      <small>- format searches like this: Artificial_intelligence, Mark_Zuckerberg, Quantum_mechanics, Google, Airplane</small>
+    <li>computer: you dont want to do this one...</li>
+    <small>any of the following key words:</small>
+      <li>greetings = ["Hello", "hello", "hello Jarvis", "jarvis", "hey Jarvis", "Jarvis", "come in Jarvis", "how are you", "how are you Jarvis", "what's up"]</li>
+      <li>good = ["Good", "good", "great", "okay", "okay jarvis", "thanks", "thanks jarvis", "okay jarvis", "Great", "I'm good", "i'm good", "im good", "i'm okay"]</li>
+      <li>bad = ["bad", "not good", "no", "No"]</li>
+  </ul>
 
 # Why?
   I have nothing better to do...
