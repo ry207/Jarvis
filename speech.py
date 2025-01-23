@@ -11,6 +11,7 @@ os.system("clear")
 
 def speech():
     while True:
+        wait = input("")
         with sr.Microphone() as source:
             audio_text = r.listen(source)
             print("Talk")
@@ -31,9 +32,7 @@ def speech():
                 print("Error; {0}".format(e))
 def text():
     while True:
-        comm = input("Jarvis >>")
-        if comm == "shut down":
-            exit(69)
+        comm = input("Jarvis >> ")
         analizetext(comm)
 
 
