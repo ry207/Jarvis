@@ -37,6 +37,17 @@ Follow these steps to install and run Jarvis:
 
 ---
 
+# Warning
+
+   ## Jarvis is not perfect!
+   
+   **When using speech mode, press the enter key so jarvis can start listening** \
+   **Jarvis has a hard time listening so be patient and try and say it slow and as clear as possible** \
+   **Text mode is easier for speed but with the right equipment speech mode can be used at long distance if you need to go hands free**
+   
+
+---
+
 ## Features
 Interact with Jarvis by saying or typing the following commands:
 
@@ -92,7 +103,7 @@ Jarvis responds to the following keywords:
 ![Live server created by jarvis](screenshot2.png "Wikipedia page Jarvis downloaded")
 *The page on aerodynamics I had Jarvis download, he then created a live server in which I could view it in!*
 
-![Hacker games](screenshot3.png "Succesfull connection to bandit hacker games")
+![Hacker games](screenshot3.png "Succesfull connection to bandit hacker games") \
 *Jarvis succesfully connected to OverTheWire: Bandit via ssh*
 
 
