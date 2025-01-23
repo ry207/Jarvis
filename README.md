@@ -54,7 +54,7 @@ Interact with Jarvis by saying or typing the following commands:
 - **`news`** - Displays hacker news titles.
 - **`download`** - Download a wikipedia page to view and save the file to your computer.
   
-  *Example search terms:* `Artificial_intelligence`, `Mark_Zuckerberg`, `Quantum_mechanics`, `Google`, `Airplane`.
+  *Example search terms:* `Artificial intelligence`, `Mark Zuckerberg`, `Quantum mechanics`, `Google`, `Airplane`.
 
 - **`computer`** – (You might not want to try this one...)
 - **`Random`** - Tells a random fact.
