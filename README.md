@@ -58,7 +58,9 @@ Interact with Jarvis by saying or typing the following commands:
 
 - **`computer`** – (You might not want to try this one...)
 - **`random`** - Tells a random fact.
-- **`hack`** - Connect to [Over the wire: Bandit](https://overthewire.org/wargames/bandit/) via ssh for fun hacker challenges
+- **`hack`** - Connect to [Over the wire: Bandit](https://overthewire.org/wargames/bandit/) via ssh for fun hacker challenges.
+- **`terminal`** - ssh into your own computer to access full command prompy capabilities.
+- **`new project`** - Create a new folder in your home directory titled whatever you like.
 
 ---
 
