@@ -85,6 +85,9 @@ Interact with Jarvis by saying or typing the following commands:
 - **`tree`** – Displays active running tasks.
 - **`function`** – Prompts for a word and outputs its length.
 - **`search`** – Prompts for a topic, searches Wikipedia, and provides a brief description (works better in text mode).
+
+   *Example search terms:* `String theory`, `Abraham Lincoln`, `Blockchain`, `Bitcoin`.
+  
 - **`news`** - Displays hacker news titles.
 - **`download`** - Download a wikipedia page to view and save the file to your computer.
   
