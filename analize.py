@@ -8,6 +8,7 @@ from wikipage import getpage
 from forum import news
 from wiki import analizevoice
 from sshtoself import sshto
+from dictionary import getdef
 
 # init function to get an engine instance for the speech synthesis 
 engine = pyttsx3.init()
@@ -149,10 +150,19 @@ A broad range of industrial and consumer products use computers as control syste
         vf =  input("Name of video file: ")
         os.system(f"mpv {vf}")
     elif voice == "help":
-        print("Commands: help, pause, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video")
+        print("Commands: help, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition")
     elif voice == "get video":
         url = input("URL: ")
         os.system(f"yt-dlp {url}")
+    elif voice == "memory":
+        try:
+            os.system("btop")
+        except:
+            print("Cannot run this command.")
+    elif voice == "clear":
+        os.system("clear")
+    elif voice == "definition":
+        getdef()
     else:
         engine.say("Not sure what you mean sir.")
         engine.runAndWait()
@@ -180,7 +190,7 @@ def analizetext(comm):
     elif comm == "download":
         search = input("Wikipage to get: ")
         sttsearch = search.replace(" ", "_")
-        engine.say(f"Here is your wikipedia page for {stt}, sir.")
+        engine.say(f"Here is your wikipedia page for {search}, sir.")
         engine.runAndWait()
         getpage(sttsearch)
     elif comm in greetings != -1:
@@ -253,7 +263,7 @@ A broad range of industrial and consumer products use computers as control syste
         engine.say("Welcome back, sir.")
         engine.runAndWait()
     elif comm == "help":
-        print("Commands: help, pause, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video")
+        print("Commands: help, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition")
     elif comm == "shut down":
         engine.say("Goodbye sir")
         engine.runAndWait()
@@ -265,6 +275,15 @@ A broad range of industrial and consumer products use computers as control syste
     elif comm == "get video":
         url = input("URL: ")
         os.system(f"yt-dlp {url}")
+    elif comm == "memory":
+        try:
+            os.system("btop")
+        except:
+            print("Cannot run this command.")
+    elif comm == "clear":
+        os.system("clear")
+    elif comm == "definition":
+        getdef()
     else:
         engine.say("Not quite sure what you mean, sir.") 
         engine.runAndWait()
