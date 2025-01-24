@@ -76,6 +76,7 @@ Assuming no errors, all dependencies should be installed.
 ## Features
 Interact with Jarvis by saying or typing the following commands:
 
+- **`text/speech`** - While in text mode, type 'speech' to enter speech mode. In speech mode, type 'text', to enter text mode.
 - **`help`** - Shows a list of commands you can either say or type.
 - **`shut down`** - Shuts downs the machine.
 - **`system`** - Prompt for a command that will enter in the terminal.
