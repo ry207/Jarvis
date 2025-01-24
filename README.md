@@ -1,8 +1,8 @@
 # Jarvis - AI Chatbot
 
 A fully functional chatbot with voice recognition and text input, inspired by J.A.R.V.I.S. from *Iron Man*.
-Jarvis can search wikipedia and download the wiki page, give you the news, tell a random fact and much more!
-I have been working on Jarvis for about a week as of 01/23/25 and i intend on adding more features, please feel free to contribute and suggest new features.
+Jarvis can search wikipedia and download the wiki page, give you the news, download and play media and so much more!
+I intend on adding more features, please feel free to contribute and suggest new features to add.
 
 ---
 
@@ -96,7 +96,7 @@ Interact with Jarvis by saying or typing the following commands:
 - **`computer`** – (You might not want to try this one...)
 - **`random`** - Tells a random fact.
 - **`hack`** - Connect to [Over the wire: Bandit](https://overthewire.org/wargames/bandit/) via ssh for fun hacker challenges.
-- **`terminal`** - ssh into your own computer to access full command prompy capabilities.
+- **`terminal`** - ssh into your own computer to access full command prompt capabilities.
 - **`new project`** - Create a new folder in your home directory titled whatever you like.
 - **`movie`** - Play any media file using this command.
 - **`get video`**  - Download any youtube video via URL.
@@ -132,7 +132,7 @@ Jarvis responds to the following keywords:
 *The page on aerodynamics I had Jarvis download, he then created a live server in which I could view it in!*
 
 ![Hacker games](screenshot3.png "Succesfull connection to bandit hacker games") \
-*Jarvis succesfully connected to OverTheWire: Bandit via ssh*
+*Jarvis successfully connected to OverTheWire: Bandit via ssh*
 
 
 ---
