@@ -27,11 +27,10 @@ def analizevoice(voice):
     try:
         desc = categories[14].text
         print(desc[19:])
-        engine.say(voice)
-        engine.runAndWait()
         engine.say(desc[19:])
+        engine.runAndWait()
     except:
         print("An Error Occured.")
         engine.say("An error occured, sir.")
-
+        engine.runAndWait()
 
