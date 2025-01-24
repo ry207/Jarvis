@@ -82,7 +82,6 @@ Interact with Jarvis by saying or typing the following commands:
      *For example:* `ls, echo, rm hello.txt`
 - **`joke`** – Displays a funny animation.
 - **`color`** – Changes the terminal color.
-- **`pause`** – Pauses the microphone.
 - **`who am I`** – Displays network information (may not work on all devices).
 - **`tree`** – Displays active running tasks.
 - **`function`** – Prompts for a word and outputs its length.
@@ -102,6 +101,9 @@ Interact with Jarvis by saying or typing the following commands:
 - **`new project`** - Create a new folder in your home directory titled whatever you like.
 - **`movie`** - Play any media file using this command.
 - **`get video`**  - Download any youtube video via URL.
+- **`memory`** - Use [btop](https://github.com/aristocratos/btop) command (Resource monitor that shows usage and stats for processor, memory, disks, network and processes.)
+- **`clear`** - Clear screen
+- **`definition`** - Get the definition of any word.
 
 ---
 
