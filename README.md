@@ -138,6 +138,9 @@ Jarvis responds to the following keywords:
 ![Hacker games](screenshot3.png "Succesfull connection to bandit hacker games") \
 *Jarvis successfully connected to OverTheWire: Bandit via ssh*
 
+![Research Capabilities](screenshot4.png "Jarvis's research capabilities") \
+*Jarvis's research capabilities*
+
 
 ---
 
