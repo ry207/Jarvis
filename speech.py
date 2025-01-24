@@ -2,6 +2,7 @@ import speech_recognition as sr
 import pyttsx3
 from analize import analize, analizetext
 import os
+from colorama import Fore
 
 # Initialize recognizer class (for recognizing the speech)
 r = sr.Recognizer()
@@ -9,7 +10,7 @@ engine = pyttsx3.init()
 
 os.system("clear")
 
-def speech():
+def speechmode():
     while True:
         wait = input("")
         with sr.Microphone() as source:
@@ -23,6 +24,8 @@ def speech():
                 # using google speech recognition
                 print("Text: "+r.recognize_google(audio_text))
                 stt = r.recognize_google(audio_text)
+                if stt == "text mode":
+                    textmode()
                 analize(stt)
             except sr.UnknownValueError:
                 stt = ""
@@ -30,18 +33,22 @@ def speech():
             except sr.RequestError as e:
                 stt = ""
                 print("Error; {0}".format(e))
-def text():
+def textmode():
     while True:
-        comm = input("Jarvis >> ")
+        print("")
+        comm = input(Fore.RED + "Jarvis >> " + Fore.BLUE)
+        print(Fore.WHITE + "")
+        if comm == "speech":
+            speechmode()
         analizetext(comm)
 
 
 speechOrText = input("Speech or Text(s/t): ")
 
 if speechOrText == "s":
-    speech()
+    speechmode()
 elif speechOrText == "t":
-    text()
+    textmode()
 else:
     print("not an option")
     exit(13)
