@@ -1,0 +1,5 @@
+beautifulsoup4
+SpeechRecognition
+pyttsx3
+colorconsole
+yt-dlp
