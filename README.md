@@ -9,7 +9,7 @@ I have been working on Jarvis for about a week as of 01/23/25 and i intend on ad
 ## Contents
    [Requirements](#Requirements)
    
-   [Installation & Setup](#Installation_&_Setup)
+   [Installation & Setup](#Installation-&-Setup)
    
    [Requirements](#Requirements)
    
