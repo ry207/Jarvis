@@ -144,8 +144,15 @@ A broad range of industrial and consumer products use computers as control syste
         sshto(name)
         engine.say("Welcome back sir.")
         engine.runAndWait()
+    elif voice == "movie":
+        os.system("ls -a")
+        vf =  input("Name of video file: ")
+        os.system(f"mpv {vf}")
     elif voice == "help":
-        print("Commands: help, pause, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project")
+        print("Commands: help, pause, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie")
+    elif voice == "get video":
+        url = input("URL: ")
+        os.system(f"yt-dlp {url}")
     else:
         engine.say("Not sure what you mean sir.")
         engine.runAndWait()
@@ -251,6 +258,13 @@ A broad range of industrial and consumer products use computers as control syste
         engine.say("Goodbye sir")
         engine.runAndWait()
         exit(69)
+    elif comm == "movie":
+        os.system("ls -a")
+        vf =  input("Name of video file: ")
+        os.system(f"mpv {vf}")
+    elif comm == "get video":
+        url = input("URL: ")
+        os.system(f"yt-dlp {url}")
     else:
         engine.say("Not quite sure what you mean, sir.") 
         engine.runAndWait()
