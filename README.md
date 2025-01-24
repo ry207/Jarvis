@@ -9,7 +9,7 @@ I have been working on Jarvis for about a week as of 01/23/25 and i intend on ad
 ## Contents
    [Requirements](#Requirements)
    
-   [Installation & Setup](#Installation-&-Setup)
+   [Installation&Setup](#Installation-&-Setup)
    
    [Requirements](#Requirements)
    
@@ -48,6 +48,15 @@ Follow these steps to install and run Jarvis:
    ```bash
    python3 speech.py
    ```
+
+### Alternatively
+You can install all dependences using the requirements.txt file
+
+1. **Type this command to install all dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+Assuming no errors, all dependencies should be installed.
 
 ---
 
