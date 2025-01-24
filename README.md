@@ -79,6 +79,16 @@ Interact with Jarvis by saying or typing the following commands:
 - **`text/speech`** - While in text mode, type 'speech' to enter speech mode. In speech mode, type 'text', to enter text mode.
 - **`help`** - Shows a list of commands you can either say or type.
 - **`shut down`** - Shuts downs the machine.
+- **`random`** - Tells a random fact.
+- **`hack`** - Connect to [Over the wire: Bandit](https://overthewire.org/wargames/bandit/) via ssh for fun hacker challenges.
+- **`terminal`** - ssh into your own computer to access full command prompt capabilities.
+- **`new project`** - Create a new folder in your home directory titled whatever you like.
+- **`movie`** - Play any media file using this command.
+- **`get video`**  - Download any youtube video via URL.
+- **`memory`** - Use [btop](https://github.com/aristocratos/btop) command (Resource monitor that shows usage and stats for processor, memory, disks, network and processes.)\
+     See [btop installation](https://github.com/aristocratos/btop?tab=readme-ov-file#installation), to be able to use this command.
+- **`clear`** - Clear screen
+- **`definition`** - Get the definition of any word.
 - **`system`** - Prompt for a command that will enter in the terminal.
      *For example:* `ls, echo, rm hello.txt`
 - **`joke`** – Displays a funny animation.
@@ -95,16 +105,7 @@ Interact with Jarvis by saying or typing the following commands:
   
   *Example search terms:* `Artificial intelligence`, `Mark Zuckerberg`, `Quantum mechanics`, `Google`, `Airplane`.
 
-- **`computer`** – (You might not want to try this one...)
-- **`random`** - Tells a random fact.
-- **`hack`** - Connect to [Over the wire: Bandit](https://overthewire.org/wargames/bandit/) via ssh for fun hacker challenges.
-- **`terminal`** - ssh into your own computer to access full command prompt capabilities.
-- **`new project`** - Create a new folder in your home directory titled whatever you like.
-- **`movie`** - Play any media file using this command.
-- **`get video`**  - Download any youtube video via URL.
-- **`memory`** - Use [btop](https://github.com/aristocratos/btop) command (Resource monitor that shows usage and stats for processor, memory, disks, network and processes.)
-- **`clear`** - Clear screen
-- **`definition`** - Get the definition of any word.
+
 
 ---
 
