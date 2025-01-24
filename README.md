@@ -9,7 +9,7 @@ I have been working on Jarvis for about a week as of 01/23/25 and i intend on ad
 ## Contents
    [Requirements](#Requirements)
    
-   [Installation%20&%20Setup](#Installation%20&%20Setup)
+   [Installation and Setup](#Installation%20and%20Setup)
    
    [Requirements](#Requirements)
    
@@ -32,7 +32,7 @@ You may need to set up a virtual environment before installing the dependencies.
 
 ---
 
-## Installation & Setup
+## Installation and Setup
 Follow these steps to install and run Jarvis:
 
 1. **Install dependencies:**
