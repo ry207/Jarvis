@@ -10,6 +10,8 @@ I intend on adding more features, please feel free to contribute and suggest new
    [Requirements](#Requirements)
    
    [Installation](#Installation)
+
+   [Features](#Features)
    
    [Requirements](#Requirements)
    
