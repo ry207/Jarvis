@@ -13,6 +13,7 @@ To get started, ensure you have the following Python packages installed:
 - `pyttsx3`
 - `colorconsole`
 - `beautifulsoup4`
+- `yt-dlp`
 
 You may need to set up a virtual environment before installing the dependencies.
 
@@ -23,7 +24,7 @@ Follow these steps to install and run Jarvis:
 
 1. **Install dependencies:**
    ```bash
-   pip install SpeechRecognition pyttsx3 colorconsole beautifulsoup4
+   pip install SpeechRecognition pyttsx3 colorconsole beautifulsoup4 yt-dlp
    ```
 2. **(Optional) Create and activate a virtual environment:**
    ```bash
@@ -72,6 +73,8 @@ Interact with Jarvis by saying or typing the following commands:
 - **`hack`** - Connect to [Over the wire: Bandit](https://overthewire.org/wargames/bandit/) via ssh for fun hacker challenges.
 - **`terminal`** - ssh into your own computer to access full command prompy capabilities.
 - **`new project`** - Create a new folder in your home directory titled whatever you like.
+- **`movie`** - Play any media file using this command.
+- **`get video`**  - Download any youtube video via URL.
 
 ---
 
