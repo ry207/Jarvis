@@ -15,7 +15,7 @@ I have been working on Jarvis for about a week as of 01/23/25 and i intend on ad
    
    [Screenshots](#Screenshots)
 
-   [Why?](#Why-I-Built_Jarvis)
+   [Why?](#Why-I-Built-Jarvis)
    
 ---
 
