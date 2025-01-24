@@ -91,11 +91,6 @@ Interact with Jarvis by saying or typing the following commands:
 - **`definition`** - Get the definition of any word.
 - **`system`** - Prompt for a command that will enter in the terminal.
      *For example:* `ls, echo, rm hello.txt`
-- **`joke`** – Displays a funny animation.
-- **`color`** – Changes the terminal color.
-- **`who am I`** – Displays network information (may not work on all devices).
-- **`tree`** – Displays active running tasks.
-- **`function`** – Prompts for a word and outputs its length.
 - **`search`** – Prompts for a topic, searches Wikipedia, and provides a brief description (works better in text mode).
 
    *Example search terms:* `String theory`, `Abraham Lincoln`, `Blockchain`, `Bitcoin`.
@@ -104,6 +99,12 @@ Interact with Jarvis by saying or typing the following commands:
 - **`download`** - Download a wikipedia page to view and save the file to your computer.
   
   *Example search terms:* `Artificial intelligence`, `Mark Zuckerberg`, `Quantum mechanics`, `Google`, `Airplane`.
+
+- **`joke`** – Displays a funny animation.
+- **`color`** – Changes the terminal color.
+- **`who am I`** – Displays network information (may not work on all devices).
+- **`tree`** – Displays active running tasks.
+- **`function`** – Prompts for a word and outputs its length.
 
 
 
