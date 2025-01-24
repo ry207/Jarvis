@@ -9,13 +9,13 @@ I have been working on Jarvis for about a week as of 01/23/25 and i intend on ad
 ## Contents
    [Requirements](#Requirements)
    
-   [Installation and Setup](#Installation%20and%20Setup)
+   [Installation](#Installation)
    
    [Requirements](#Requirements)
    
    [Screenshots](#Screenshots)
 
-   [Why?](#Why-I-Built-Jarvis)
+   [Why?](#Why)
    
 ---
 
@@ -32,7 +32,7 @@ You may need to set up a virtual environment before installing the dependencies.
 
 ---
 
-## Installation and Setup
+## Installation
 Follow these steps to install and run Jarvis:
 
 1. **Install dependencies:**
@@ -134,7 +134,7 @@ Jarvis responds to the following keywords:
 
 ---
 
-## Why I Built Jarvis
+## Why 
 I created Jarvis because I thought it would be fun to have a chatbot that talks back—plus, I had nothing better to do!
 
 ---
