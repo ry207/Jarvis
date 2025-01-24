@@ -149,7 +149,7 @@ A broad range of industrial and consumer products use computers as control syste
         vf =  input("Name of video file: ")
         os.system(f"mpv {vf}")
     elif voice == "help":
-        print("Commands: help, pause, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie")
+        print("Commands: help, pause, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video")
     elif voice == "get video":
         url = input("URL: ")
         os.system(f"yt-dlp {url}")
@@ -253,7 +253,7 @@ A broad range of industrial and consumer products use computers as control syste
         engine.say("Welcome back, sir.")
         engine.runAndWait()
     elif comm == "help":
-        print("Commands: help, pause, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project")
+        print("Commands: help, pause, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video")
     elif comm == "shut down":
         engine.say("Goodbye sir")
         engine.runAndWait()
