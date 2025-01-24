@@ -13,8 +13,6 @@ I intend on adding more features, please feel free to contribute and suggest new
 
    [Features](#Features)
    
-   [Requirements](#Requirements)
-   
    [Screenshots](#Screenshots)
 
    [Why?](#Why)
