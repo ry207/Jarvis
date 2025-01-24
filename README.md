@@ -6,6 +6,19 @@ I have been working on Jarvis for about a week as of 01/23/25 and i intend on ad
 
 ---
 
+## Contents
+   [Requirements](#Requirements)
+   
+   [Installation & Setup](#Installation-&-Setup)
+   
+   [Requirements](#Requirements)
+   
+   [Screenshots](#Screenshots)
+
+   [Why?](#Why-I-Built_Jarvis)
+   
+---
+
 ## Requirements
 To get started, ensure you have the following Python packages installed:
 
