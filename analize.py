@@ -199,12 +199,15 @@ def analizetext(comm):
     elif comm in greetings != -1:
         engine.say('Hello sir, how may I help you, sir.')
         engine.runAndWait()
+        print("How may I help you sir?")
     elif comm in good != -1:
         engine.say('Of course, sir.')
         engine.runAndWait()
+        print("Of course sir.")
     elif comm in bad != -1:
         engine.say('Sorry, Sir.')
         engine.runAndWait()
+        print("Sorry sir.")
     elif comm in function1 != -1:
         engine.say('What word would you like?')
         engine.runAndWait()
@@ -222,7 +225,7 @@ A broad range of industrial and consumer products use computers as control syste
         print("searching..")
         engine.say('What word would you like to search?')
         engine.runAndWait()
-        search = input("Search(Xxx_Xxx): ")
+        search = input("Search: ")
         sttsearch = search.replace(" ", "_")
         analizevoice(sttsearch)
     elif comm == "joke":
@@ -292,3 +295,6 @@ A broad range of industrial and consumer products use computers as control syste
     else:
         engine.say("Not quite sure what you mean, sir.") 
         engine.runAndWait()
+
+
+

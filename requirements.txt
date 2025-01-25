@@ -4,3 +4,4 @@ pyttsx3
 colorconsole
 yt-dlp
 colorama
+requests
