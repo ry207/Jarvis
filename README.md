@@ -51,6 +51,10 @@ Follow these steps to install and run Jarvis:
    python3 speech.py
    ```
 
+## Other required installs
+Requirments that can't be installed using pip:
+1. **mpv**
+
 ### Alternatively
 You can install all dependences using the requirements.txt file
 
