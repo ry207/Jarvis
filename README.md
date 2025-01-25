@@ -69,6 +69,10 @@ Assuming no errors, all dependencies should be installed.
    **When using speech mode, press the enter key so jarvis can start listening** \
    **Jarvis has a hard time listening so be patient and try and say it slow and as clear as possible** \
    **Text mode is easier for speed but with the right equipment speech mode can be used at long distance if you need to go hands free**
+
+   ## Don't forget!
+
+   **Don't forget to create this folder in the Jarvis directory: WikiPages**
    
 
 ---
