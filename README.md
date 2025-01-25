@@ -93,10 +93,12 @@ Assuming no errors, all dependencies should be installed.
 ## Features
 Interact with Jarvis by saying or typing the following commands:
 
-- **`text/speech`** - While in text mode, type 'speech' to enter speech mode. In speech mode, type 'text', to enter text mode.
+- **`text mode/speech`** - While in text mode, type 'speech' to enter speech mode. In speech mode, type 'text', to enter text mode.
 - **`help`** - Shows a list of commands you can either say or type.
 - **`shut down`** - Shuts downs the machine.
-- **`random`** - Tells a random fact.
+- **`tell me a fact`** - Tells a random fact.
+- **`stocks`** - List trending stocks.
+- **`what time is it`** - Tells date and time.
 - **`research`** - Outputs interesting research papers with link.
 - **`execute`** - Execute an executable you put in the `Executables` folder
 - **`hack`** - Connect to [Over the wire: Bandit](https://overthewire.org/wargames/bandit/) via ssh for fun hacker challenges.
@@ -119,8 +121,7 @@ Interact with Jarvis by saying or typing the following commands:
   
   *Example search terms:* `Artificial intelligence`, `Mark Zuckerberg`, `Quantum mechanics`, `Google`, `Airplane`.
 
-- **`joke`** – Displays a funny animation.
-- **`color`** – Changes the terminal color.
+- **`tell me a joke`** – Displays a funny animation.
 - **`who am I`** – Displays network information (may not work on all devices).
 - **`tree`** – Displays active running tasks.
 - **`function`** – Prompts for a word and outputs its length.
