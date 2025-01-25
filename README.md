@@ -72,7 +72,7 @@ Assuming no errors, all dependencies should be installed.
 
    ## Don't forget!
 
-   **Don't forget to create this folder in the Jarvis directory: WikiPages**
+   **Don't forget to create these folders in the Jarvis directory: WikiPages & VideoFiles**
    
 
 ---
