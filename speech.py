@@ -10,9 +10,18 @@ engine = pyttsx3.init()
 
 os.system("clear")
 
+print("""
+       __                 _     
+      / /___ _______   __(_)____
+ __  / / __ `/ ___/ | / / / ___/
+/ /_/ / /_/ / /   | |/ / (__  ) 
+\____/\__,_/_/    |___/_/____/  
+                                                        
+""")
+
 def speechmode():
     while True:
-        wait = input("")
+        print(Fore.RED + "Speak: "  + Fore.WHITE)
         with sr.Microphone() as source:
             audio_text = r.listen(source)
             print("Talk")
