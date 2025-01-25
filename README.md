@@ -71,6 +71,7 @@ Assuming no errors, all dependencies should be installed.
    ```bash
    pyinstaller .\speech.py --onefile -c
    ```
+   Then locate the dist directory that was created in the main folder, move the executable in the dist directory the the main directory and it should work!
 
 ---
 
