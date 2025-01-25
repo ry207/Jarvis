@@ -161,7 +161,9 @@ A broad range of industrial and consumer products use computers as control syste
         if mov == "b":
             os.system(f"yt-dlp -o \"%(title)s\".mp4 {url}")
     elif voice == "help":
-        print("Commands: help, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research")
+        print("Commands: help, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute")
+        engine.say("How can i help sir.")
+        engine.runAndWait()
     elif voice == "memory":
         try:
             os.system("btop")
@@ -173,8 +175,13 @@ A broad range of industrial and consumer products use computers as control syste
         getdef()
     elif voice == "research":
         getpapers()
+    elif voice == "execute":
+        os.system("dir .\Executables\\")
+        os.system("ls Executables/")
+        executablename = input("Name of executable: ")
+        os.system(f".\Executables\{executablename}")
     else:
-        engine.say("Not sure what you mean sir.")
+        engine.say("Not quite sure what you mean sir.")
         engine.runAndWait()
 
 
@@ -276,7 +283,9 @@ A broad range of industrial and consumer products use computers as control syste
         engine.say("Welcome back, sir.")
         engine.runAndWait()
     elif comm == "help":
-        print("Commands: help, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research")
+        print("Commands: help, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute")
+        engine.say("How can i help sir.")
+        engine.runAndWait()
     elif comm == "shut down":
         engine.say("Goodbye sir")
         engine.runAndWait()
@@ -306,6 +315,11 @@ A broad range of industrial and consumer products use computers as control syste
         getdef()
     elif comm == "research":
         getpapers()
+    elif comm == "execute":
+        os.system("dir .\Executables\\")
+        os.system("ls Executables/")
+        executablename = input("Name of executable: ")
+        os.system(f".\Executables\{executablename}")
     else:
         engine.say("Not quite sure what you mean, sir.") 
         engine.runAndWait()
