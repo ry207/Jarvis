@@ -9,6 +9,7 @@ from forum import news
 from wiki import analizevoice
 from sshtoself import sshto
 from dictionary import getdef
+from papers import getpapers
 
 # init function to get an engine instance for the speech synthesis 
 engine = pyttsx3.init()
@@ -150,7 +151,7 @@ A broad range of industrial and consumer products use computers as control syste
         vf =  input("Name of video file: ")
         os.system(f"mpv {vf}")
     elif voice == "help":
-        print("Commands: help, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition")
+        print("Commands: help, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research")
     elif voice == "get video":
         url = input("URL: ")
         os.system(f"yt-dlp {url}")
@@ -163,6 +164,8 @@ A broad range of industrial and consumer products use computers as control syste
         os.system("clear")
     elif voice == "definition":
         getdef()
+    elif voice == "research":
+        getpapers()
     else:
         engine.say("Not sure what you mean sir.")
         engine.runAndWait()
@@ -263,7 +266,7 @@ A broad range of industrial and consumer products use computers as control syste
         engine.say("Welcome back, sir.")
         engine.runAndWait()
     elif comm == "help":
-        print("Commands: help, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition")
+        print("Commands: help, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research")
     elif comm == "shut down":
         engine.say("Goodbye sir")
         engine.runAndWait()
@@ -284,9 +287,8 @@ A broad range of industrial and consumer products use computers as control syste
         os.system("clear")
     elif comm == "definition":
         getdef()
+    elif comm == "research":
+        getpapers()
     else:
         engine.say("Not quite sure what you mean, sir.") 
         engine.runAndWait()
-
-
-
