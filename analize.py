@@ -147,16 +147,19 @@ A broad range of industrial and consumer products use computers as control syste
         engine.say("Welcome back sir.")
         engine.runAndWait()
     elif voice == "movie":
-        os.system("ls VideoFiles/")
+        os.system("ls")
+        os.system("dir")
         vf =  input("Name of video file: ")
+        engine.say("Enjoy the movie, sir.")
+        engine.runAndWait()
         os.system(f"mpv {vf}")
     elif voice == "get video":
         mov = input("Video or Audio(v/a): ")
         url = input("URL: ")
         if mov == "a":
-            os.system(f"yt-dlp -o VideoFiles/\"%(title)s\".mp3 {url}")
+            os.system(f"yt-dlp -o \"%(title)s\".mp3 {url}")
         if mov == "b":
-            os.system(f"yt-dlp -o VideoFiles/\"%(title)s\".mp4 {url}")
+            os.system(f"yt-dlp -o \"%(title)s\".mp4 {url}")
     elif voice == "help":
         print("Commands: help, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research")
     elif voice == "memory":
@@ -279,16 +282,19 @@ A broad range of industrial and consumer products use computers as control syste
         engine.runAndWait()
         exit(69)
     elif comm == "movie":
-        os.system("ls VideoFiles/")
+        os.system("ls")
+        os.system("dir")
         vf =  input("Name of video file: ")
+        engine.say("Enjoy the movie, sir.")
+        engine.runAndWait()
         os.system(f"mpv {vf}")
     elif comm == "get video":
         mov = input("Video or Audio(v/a): ")
         url = input("URL: ")
         if mov == "a":
-            os.system(f"yt-dlp -o VideoFiles/\"%(title)s\".mp3 {url}")
+            os.system(f"yt-dlp -o \"%(title)s\".mp3 {url}")
         if mov == "b":
-            os.system(f"yt-dlp -o VideoFiles/\"%(title)s\".mp4 {url}")
+            os.system(f"yt-dlp -o \"%(title)s\".mp4 {url}")
     elif comm == "memory":
         try:
             os.system("btop")
@@ -303,6 +309,3 @@ A broad range of industrial and consumer products use computers as control syste
     else:
         engine.say("Not quite sure what you mean, sir.") 
         engine.runAndWait()
-
-
-
