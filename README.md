@@ -54,6 +54,7 @@ Follow these steps to install and run Jarvis:
 ## Other required installs
 Requirments that can't be installed using pip:
 1. **mpv**
+2. **btop**
 
 ### Alternatively
 You can install all dependences using the requirements.txt file
