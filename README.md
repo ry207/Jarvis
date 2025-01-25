@@ -13,6 +13,8 @@ I intend on adding more features, please feel free to contribute and suggest new
    
    [Alternative Installation](#Alternatively)
 
+   [Warning!](#Warning)
+
    [Features](#Features)
    
    [Screenshots](#Screenshots)
@@ -65,6 +67,11 @@ You can install all dependences using the requirements.txt file
    ```
 Assuming no errors, all dependencies should be installed.
 
+2. **Create an executable for windows:**
+   ```bash
+   pyinstaller .\speech.py --onefile -c
+   ```
+
 ---
 
 # Warning
@@ -77,7 +84,7 @@ Assuming no errors, all dependencies should be installed.
 
    ## Don't forget!
 
-   **Don't forget to create these folders in the Jarvis directory: WikiPages & VideoFiles**
+   **Don't forget to create these folders in the Jarvis directory: WikiPages, VideoFiles, Executables**
    
 
 ---
@@ -90,6 +97,7 @@ Interact with Jarvis by saying or typing the following commands:
 - **`shut down`** - Shuts downs the machine.
 - **`random`** - Tells a random fact.
 - **`research`** - Outputs interesting research papers with link.
+- **`execute`** - Execute an executable you put in the `Executables` folder
 - **`hack`** - Connect to [Over the wire: Bandit](https://overthewire.org/wargames/bandit/) via ssh for fun hacker challenges.
 - **`terminal`** - ssh into your own computer to access full command prompt capabilities.
 - **`new project`** - Create a new folder in your home directory titled whatever you like.
