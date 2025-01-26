@@ -1,4 +1,3 @@
-
 # User greetings and responses
 greetings = [
     "Hello", "hello", "hello Jarvis", "jarvis", "hey Jarvis", 
@@ -14,7 +13,7 @@ good = [
     "awesome", "fantastic", "sweet", "perfect", "amazing", "interesting", "very interesting", "pretty cool", "pretty interesting", "interesting stuff", "bet", "alright", "that's fine", "that's alright", "ok", "thanks jar"
 ]
 
-thanks = ["wow thanks Jarvis", "thanks Jarvis", "gee thanks", "gee thanks Jarvis", "thanks jar", "thanks Jar", "thanks a lot", "wow thanks", "thank you so much", "thank you so much Jarvis", "yes thank you", "yup thanks"]
+thanks = ["wow thanks Jarvis", "thanks Jarvis", "gee thanks", "gee thanks Jarvis", "thanks jar", "thanks Jar", "thanks a lot", "wow thanks", "thank you so much", "thank you so much Jarvis", "yes thank you", "yup thanks", "thanks"]
 
 # Asking how Jarvis is
 howis = [
@@ -156,5 +155,3 @@ random_facts = [
     "The heart of a blue whale is so large that a human could swim through its arteries.",
     "There are more fake flamingos in the world than real ones."
 ]
-
-
