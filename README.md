@@ -98,6 +98,7 @@ Interact with Jarvis by saying or typing the following commands:
 
 - **`text mode/speech`** - While in text mode, type 'speech' to enter speech mode. In speech mode, type 'text mode', to enter text mode.
 - **`help`** - Shows a list of commands you can either say or type.
+- **`find youtube video`** - Will ask for a search then output youtubes search results.
 - **`shut down`** - Shuts downs the machine.
 - **`tell me a fact`** - Tells a random fact.
 - **`stocks`** - List trending stocks.
