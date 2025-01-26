@@ -15,6 +15,7 @@ from papers import getpapers
 from stocks import getstocks
 from phrases import *
 from yahooyt import yaho
+from journal import addToJournal
 
 # init function to get an engine instance for the speech synthesis 
 engine = pyttsx3.init()
@@ -50,6 +51,10 @@ def analize(voice):
         getstocks()
     elif voice == "go on":
         engine.runAndWait()
+    elif voice == "add to journal":
+        engine.say("What would you like to write sir.")
+        engine.runAndWait()
+        addToJournal()
     elif voice == "news":
         news()
         engine.say("Heres the news, sir.")
@@ -241,6 +246,10 @@ def analizetext(comm):
         engine.runAndWait()
         ytsearch = input("What youtube video would you like to search for: ")
         yaho(ytsearch)
+    elif comm == "add to journal":
+        engine.say("What would you like to write sir.")
+        engine.runAndWait()
+        addToJournal()
     elif comm == "go on":
         engine.runAndWait()
     elif comm == "hack":
