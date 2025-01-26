@@ -22,35 +22,56 @@ print("""
 def speechmode():
     while True:
         print(Fore.RED + "Speak: "  + Fore.WHITE)
-        with sr.Microphone() as source:
-            audio_text = r.listen(source)
-            print("Talk")
-            print("Time over, thanks")
-            # recoginze_() method will throw a request
-            # error if the API is unreachable,
-            # hence using exception handling
-            try:
-                # using google speech recognition
-                print("Text: "+r.recognize_google(audio_text))
-                stt = r.recognize_google(audio_text)
-                if stt == "text mode":
-                    textmode()
-                analize(stt)
-            except sr.UnknownValueError:
-                stt = ""
-                print("Sorry, I didn't understand that.")
-            except sr.RequestError as e:
-                stt = ""
-                print("Error; {0}".format(e))
+        try:
+            with sr.Microphone() as source:
+                audio_text = r.listen(source)
+                print("Talk")
+                print("Time over, thanks")
+                # recoginze_() method will throw a request
+                # error if the API is unreachable,
+                # hence using exception handling
+                try:
+                    # using google speech recognition
+                    print("Text: "+r.recognize_google(audio_text))
+                    stt = r.recognize_google(audio_text)
+                    if stt == "text mode":
+                        textmode()
+                    analize(stt)
+                except sr.UnknownValueError:
+                    stt = ""
+                    print("Sorry, I didn't understand that.")
+                except sr.RequestError as e:
+                    stt = ""
+                    print("Error; {0}".format(e))
+        except KeyboardInterrupt:
+            sure = input(Fore.RED + "\n\nAre you sure you want to leave(y/n): " + Fore.WHITE)
+            if sure == "y":
+                exit(69)
+            elif sure == "n":
+                print(Fore.GREEN + "okay you can stay..." + Fore.WHITE)
+                continue
+            else:
+                print("bye")
+                exit(69)
 def textmode():
     while True:
-        print("")
-        comm = input(Fore.RED + "Jarvis >> " + Fore.BLUE)
-        print(Fore.WHITE + "")
-        if comm == "speech":
-            speechmode()
-        analizetext(comm)
-
+        try:
+            print("")
+            comm = input(Fore.RED + "Jarvis >> " + Fore.BLUE)
+            print(Fore.WHITE + "")
+            if comm == "speech":
+                speechmode()
+            analizetext(comm)
+        except KeyboardInterrupt:
+            sure = input(Fore.RED + "\n\nAre you sure you want to leave(y/n): " + Fore.WHITE)
+            if sure == "y":
+                exit(69)
+            elif sure == "n":
+                print(Fore.GREEN + "okay you can stay..." + Fore.WHITE)
+                continue
+            else:
+                print("bye")
+                exit(69)
 
 speechOrText = input("Speech or Text(s/t): ")
 
