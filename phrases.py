@@ -99,7 +99,7 @@ about_jarvis = [
 exit_shutdown = [
     "bye", "goodbye", "exit", "close", "shut down", 
     "turn off", "Jarvis bye", "see you later", "I'm leaving", 
-    "end session", "terminate", "power down", "power off", "I'll see ya", "see ya", "goodbye Jarvis", "see ya Jarvis", "power down", "go to sleep", "die", "kill yourself"
+    "end session", "terminate", "power down", "power off", "I'll see you", "see ya", "goodbye Jarvis", "see you Jarvis", "power down", "go to sleep", "die", "kill yourself", "I'll see you later", "see you later Jarvis"
 ]
 
 # Asking for motivation
