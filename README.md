@@ -100,7 +100,7 @@ Interact with Jarvis by saying or typing the following commands:
 - **`help`** - Shows a list of commands you can either say or type.
 - **`find youtube video`** - Will ask for a search then output youtubes search results.
 - **`shut down`** - Shuts downs the machine.
-- - **`movie`** - Play any media file using this command.
+- **`movie`** - Play any media file using this command.
 - **`get video`**  - Download any youtube video via URL.
 - **`add to journal`** - Prompt for a journal entry then Jarvis will write to a text file with a time stamp.
 - **`tell me a fact`** - Tells a random fact.
