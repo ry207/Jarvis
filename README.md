@@ -26,11 +26,14 @@ I intend on adding more features, please feel free to contribute and suggest new
 ## Requirements
 To get started, ensure you have the following Python packages installed:
 
+- `beautifulsoup4`
 - `SpeechRecognition`
+- `PyAudio`
 - `pyttsx3`
 - `colorconsole`
-- `beautifulsoup4`
-- `yt-dlp`
+- `colorama`
+- `requests`
+- `lxml`
 
 You may need to set up a virtual environment before installing the dependencies.
 
@@ -41,7 +44,7 @@ Follow these steps to install and run Jarvis:
 
 1. **Install dependencies:**
    ```bash
-   pip install SpeechRecognition pyttsx3 colorconsole beautifulsoup4 yt-dlp
+   pip install beautifulsoup4 SpeechRecognition PyAudio pyttsx3 colorconsole yt-dlp colorama requests lxml
    ```
 2. **(Optional) Create and activate a virtual environment:**
    ```bash
@@ -57,6 +60,7 @@ Follow these steps to install and run Jarvis:
 Requirments that can't be installed using pip:
 1. **mpv**
 2. **btop**
+3. **[yt-dlp](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe)**
 
 ### Alternatively
 You can install all dependences using the requirements.txt file
@@ -79,13 +83,12 @@ Assuming no errors, all dependencies should be installed.
 
    ## Jarvis is not perfect!
    
-   **When using speech mode, press the enter key so jarvis can start listening** \
-   **Jarvis has a hard time listening so be patient and try and say it slow and as clear as possible** \
-   **Text mode is easier for speed but with the right equipment speech mode can be used at long distance if you need to go hands free**
+   **Jarvis has a hard time listening so be patient and try and say things as slow and as clear as possible.** \
+   **Text mode is faster and more precise but speech mode is easier for hands free work**
 
    ## Don't forget!
 
-   **Don't forget to create these folders in the Jarvis directory: WikiPages, VideoFiles, Executables**
+   **Don't forget to create these folders in the Jarvis directory: `WikiPages`, `Executables`**
    
 
 ---
@@ -93,7 +96,7 @@ Assuming no errors, all dependencies should be installed.
 ## Features
 Interact with Jarvis by saying or typing the following commands:
 
-- **`text mode/speech`** - While in text mode, type 'speech' to enter speech mode. In speech mode, type 'text', to enter text mode.
+- **`text mode/speech`** - While in text mode, type 'speech' to enter speech mode. In speech mode, type 'text mode', to enter text mode.
 - **`help`** - Shows a list of commands you can either say or type.
 - **`shut down`** - Shuts downs the machine.
 - **`tell me a fact`** - Tells a random fact.
@@ -130,7 +133,8 @@ Interact with Jarvis by saying or typing the following commands:
 
 ---
 
-### Additional Keywords
+## Additional Keywords
+### (see [phrases.py](https://github.com/ry207/Jarvis/blob/main/phrases.py) for the full list of phrases) 
 Jarvis responds to the following keywords:
 
 **Greetings:**
@@ -168,7 +172,7 @@ Jarvis responds to the following keywords:
 ---
 
 ## Why 
-I created Jarvis because I thought it would be fun to have a chatbot that talks back—plus, I had nothing better to do!
+I created Jarvis because I thought it would be fun to have a chatbot that talks back—plus, I had nothing better to do... Jarvis has come a long way since I started but he still had a long way to go before he's finished. What features do you guys have in mind???
 
 ---
 
