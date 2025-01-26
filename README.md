@@ -172,7 +172,7 @@ Jarvis responds to the following keywords:
 ---
 
 ## Why 
-I created Jarvis because I thought it would be fun to have a chatbot that talks back—plus, I had nothing better to do... Jarvis has come a long way since I started but he still had a long way to go before he's finished. What features do you guys have in mind???
+I created Jarvis because I thought it would be fun to have a chatbot that talks back—plus, I had nothing better to do... Jarvis has come a long way since I started but he still has a long way to go before he's finished. What features do you guys have in mind???
 
 ---
 
