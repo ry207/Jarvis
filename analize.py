@@ -189,7 +189,7 @@ A broad range of industrial and consumer products use computers as control syste
         if mov == "v":
             os.system(f"yt-dlp -o \"%(title)s\".mp4 {url}")
     elif voice == "help":
-        print("Commands: help, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute, time, stocks, find youtube video")
+        print("Commands: help, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute, time, stocks, find youtube video, add to journal")
         engine.say("How can i help sir.")
         engine.runAndWait()
     elif voice == "memory":
@@ -345,7 +345,7 @@ A broad range of industrial and consumer products use computers as control syste
         engine.say("Welcome back, sir.")
         engine.runAndWait()
     elif comm == "help":
-        print("Commands: help, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute, time, stocks, find youtube video")
+        print("Commands: help, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute, time, stocks, find youtube video, add to journal")
         engine.say("How can i help sir.")
         engine.runAndWait()
     elif comm in time_date:
