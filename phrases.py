@@ -89,7 +89,7 @@ fun = [
 ]
 
 youtube_phrases = [
-        "find a video", "find me a video", "youtube", "youtube video", "get youtube", "I want to find a youtube video", "I want a youtube video", "find me a youtube video", "find youtube", "search youtube", "search for this video", "find video", "find this video"
+        "find a video", "find me a video", "youtube", "youtube video", "get youtube", "I want to find a youtube video", "I want a youtube video", "find me a youtube video", "find youtube", "search youtube", "search for this video", "find video", "find this video", "find youtube video"
 ]
 
 stock_phrases = [
