@@ -36,6 +36,10 @@ def speechmode():
                     stt = r.recognize_google(audio_text)
                     if stt == "text mode":
                         textmode()
+                    elif "hey Jarvis" in stt:
+                        stt = stt.replace("hey Jarvis ", "")
+                        analize(stt)
+                        continue
                     analize(stt)
                 except sr.UnknownValueError:
                     stt = ""
