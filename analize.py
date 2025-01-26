@@ -5,6 +5,7 @@ import colorconsole.terminal
 import random
 import datetime
 
+
 from wikipage import getpage
 from forum import news
 from wiki import analizevoice
@@ -13,6 +14,7 @@ from dictionary import getdef
 from papers import getpapers
 from stocks import getstocks
 from phrases import *
+from yahooyt import yaho
 
 # init function to get an engine instance for the speech synthesis 
 engine = pyttsx3.init()
@@ -39,8 +41,15 @@ def analize(voice):
         engine.say("Goodbye, Sir")
         engine.runAndWait()
         exit(69)
+    elif voice in youtube_phrases:
+        engine.say("what youtube video sir")
+        engine.runAndWait()
+        ytsearch = input("What youtube video would you like to search for: ")
+        yaho(ytsearch)
     elif voice in stock_phrases:
         getstocks()
+    elif voice == "go on":
+        engine.runAndWait()
     elif voice == "news":
         news()
         engine.say("Heres the news, sir.")
@@ -222,6 +231,13 @@ _            _                         _
 def analizetext(comm):
     if comm in todo != -1:
         engine.say('Nothing to do sir, lets have a nice day')
+        engine.runAndWait()
+    elif comm in youtube_phrases:
+        engine.say("what youtube video sir")
+        engine.runAndWait()
+        ytsearch = input("What youtube video would you like to search for: ")
+        yaho(ytsearch)
+    elif comm == "go on":
         engine.runAndWait()
     elif comm == "hack":
         level = input("Select level 0-34: ")
