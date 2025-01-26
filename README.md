@@ -60,7 +60,7 @@ Follow these steps to install and run Jarvis:
 
 1. **Install dependencies**
    ```bash
-    pip install PyQt5, pyqt5-tools
+    pip install PyQt5 pyqt5-tools
    ```
 3. **Run**
    ```bash
