@@ -72,42 +72,13 @@ time_date = [
     "what day is it", "day today", "Jarvis time"
 ]
 
-# Asking for weather updates
-weather = [
-    "what's the weather", "weather", "weather update", 
-    "hows the weather", "forecast", "Jarvis weather", 
-    "current weather", "weather report", "temperature outside", 
-    "rain today", "is it hot"
-]
-
-# Asking for music
-music = [
-    "play music", "music please", "Jarvis play something", 
-    "start music", "play a song", "music on", 
-    "play playlist", "play some tunes", "music Jarvis"
-]
-
-# Asking about Jarvis himself
-about_jarvis = [
-    "who are you", "what are you", "tell me about yourself", 
-    "Jarvis who", "introduce yourself", "describe yourself", 
-    "are you AI", "what do you do", "your purpose", 
-    "explain yourself", "Jarvis info"
-]
-
 # Exiting or shutting down
 exit_shutdown = [
     "bye", "goodbye", "exit", "close", "shut down", 
     "turn off", "Jarvis bye", "see you later", "I'm leaving", 
-    "end session", "terminate", "power down", "power off", "I'll see you", "see ya", "goodbye Jarvis", "see you Jarvis", "power down", "go to sleep", "die", "kill yourself", "I'll see you later", "see you later Jarvis"
+    "end session", "terminate", "power down", "power off", "I'll see you", "see ya", "goodbye Jarvis", "see you Jarvis", "power down", "go to sleep", "die", "kill yourself", "I'll see you later", "see you later Jarvis", "goodnight Jarvis", "goodnight", "good night", "good night Jarivs", "see you tomorrow", "see you tommorow Jarvis", "bye Jarvis", "bye"
 ]
 
-# Asking for motivation
-motivation = [
-    "motivate me", "inspire me", "give me motivation", 
-    "encouragement please", "uplift me", "keep me going", 
-    "motivation quote", "Jarvis inspire", "say something inspiring"
-]
 
 # Fun responses
 fun = [
