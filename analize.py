@@ -21,40 +21,18 @@ engine = pyttsx3.init()
 r = sr.Recognizer()
 
 
-random_facts = [
-    "Bananas are berries, but strawberries are not.",
-    "Honey never spoils. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old.",
-    "The Eiffel Tower can be 15 cm taller during the summer due to the expansion of metal in the heat.",
-    "Octopuses have three hearts, two pump blood to the gills, and one pumps it to the rest of the body.",
-    "A day on Venus is longer than a year on Venus. It takes 243 Earth days to rotate once but only 225 Earth days to orbit the Sun.",
-    "A crocodile can't stick its tongue out.",
-    "Wombat poop is cube-shaped to prevent it from rolling away.",
-    "The human nose can detect over 1 trillion different scents.",
-    "Cleopatra lived closer in time to the first moon landing than to the construction of the Great Pyramid of Giza.",
-    "Sharks have been around longer than trees. They have existed for over 400 million years.",
-    "A single cloud can weigh more than a million pounds.",
-    "There are more possible iterations of a game of chess than there are atoms in the known universe.",
-    "Sloths can hold their breath longer than dolphins by slowing their heart rate to stay underwater for up to 40 minutes.",
-    "The shortest war in history lasted only 38 to 45 minutes between Britain and Zanzibar in 1896.",
-    "The inventor of the frisbee was turned into a frisbee after he died.",
-    "Hot water freezes faster than cold water, a phenomenon known as the Mpemba effect.",
-    "There’s enough DNA in the human body to stretch from the Earth to the Sun and back about 600 times.",
-    "An octopus has blue blood because it uses copper instead of iron to transport oxygen.",
-    "Butterflies can taste with their feet to identify the right plants to lay their eggs on.",
-    "Venus is the only planet in our solar system that spins clockwise.",
-    "A group of flamingos is called a 'flamboyance.'",
-    "There’s a species of jellyfish that can revert its cells to an earlier stage, making it potentially immortal.",
-    "Humans share about 60% of their DNA with bananas.",
-    "The word 'alphabet' comes from the first two letters of the Greek alphabet: alpha and beta.",
-    "A bolt of lightning is five times hotter than the surface of the sun.",
-    "Penguins propose to their mates by presenting them with a perfect pebble.",
-    "If you could fold a piece of paper 42 times, it would reach the Moon.",
-    "You can’t hum while holding your nose closed.",
-    "The heart of a blue whale is so large that a human could swim through its arteries.",
-    "There are more fake flamingos in the world than real ones."
-]
+'''
+                            
+                          _                           _      
+                         | |                         | |     
+ ___ _ __   ___  ___  ___| |__    _ __ ___   ___   __| | ___ 
+/ __| '_ \ / _ \/ _ \/ __| '_ \  | '_ ` _ \ / _ \ / _` |/ _ \
+\__ \ |_) |  __/  __/ (__| | | | | | | | | | (_) | (_| |  __/
+|___/ .__/ \___|\___|\___|_| |_| |_| |_| |_|\___/ \__,_|\___|
+    | |                                                      
+    |_|                                                                                                     
 
-
+'''
 
 
 
@@ -229,6 +207,20 @@ A broad range of industrial and consumer products use computers as control syste
         engine.runAndWait()
 
 
+'''
+
+_            _                         _      
+| |          | |                       | |     
+| |_ _____  _| |_   _ __ ___   ___   __| | ___ 
+| __/ _ \ \/ / __| | '_ ` _ \ / _ \ / _` |/ _ \
+| ||  __/>  <| |_  | | | | | | (_) | (_| |  __/
+ \__\___/_/\_|___| |_| |_| |_|\___/ \__,_|\___|
+                                               
+                                               
+
+'''
+
+
 
 def analizetext(comm):
     if comm in todo != -1:
@@ -330,6 +322,17 @@ A broad range of industrial and consumer products use computers as control syste
         print("Commands: help, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute, time, stocks")
         engine.say("How can i help sir.")
         engine.runAndWait()
+    elif comm in time_date:
+        x = datetime.datetime.now()
+        print(x.strftime("%A"))
+        print(x.strftime("%B"), x.strftime("%d"))
+        print(x.strftime("%I"), x.strftime("%M"), x.strftime("%p"))
+        hour = x.strftime("%I")
+        hour = hour.replace("0", "")
+        minute = x.strftime("%M")
+        minute = minute.replace("0", "")
+        engine.say(f"Today is {x.strftime("%A")}, {x.strftime("%B")} {x.strftime("%d")}, and it {hour} {minute}, {x.strftime("%p")}")
+        engine.runAndWait()
     elif comm in exit_shutdown:
         engine.say("Goodbye sir")
         engine.runAndWait()
@@ -364,8 +367,9 @@ A broad range of industrial and consumer products use computers as control syste
         os.system("ls Executables/")
         executablename = input("Name of executable: ")
         os.system(f".\Executables\{executablename}")
-    elif comm in getstocks:
+    elif comm in stock_phrases:
         getstocks()
     else:
         engine.say("Not quite sure what you mean, sir.") 
         engine.runAndWait()
+
