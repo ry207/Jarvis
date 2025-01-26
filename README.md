@@ -34,6 +34,7 @@ To get started, ensure you have the following Python packages installed:
 - `colorama`
 - `requests`
 - `lxml`
+- `wikipedia`
 
 You may need to set up a virtual environment before installing the dependencies.
 
@@ -44,7 +45,7 @@ Follow these steps to install and run Jarvis:
 
 1. **Install dependencies:**
    ```bash
-   pip install beautifulsoup4 SpeechRecognition PyAudio pyttsx3 colorconsole yt-dlp colorama requests lxml
+   pip install beautifulsoup4 SpeechRecognition PyAudio pyttsx3 colorconsole yt-dlp colorama requests lxml wikipedia pyqt5 PyQt5 pyqt5-tools
    ```
 2. **(Optional) Create and activate a virtual environment:**
    ```bash
@@ -111,6 +112,7 @@ Interact with Jarvis by saying or typing the following commands:
 - **`help`** - Shows a list of commands you can either say or type.
 - **`find youtube video`** - Will ask for a search then output youtubes search results.
 - **`shut down`** - Shuts downs the machine.
+- **`open camera`** - Opens the camera application.
 - **`movie`** - Play any media file using this command.
 - **`get video`**  - Download any youtube video via URL.
 - **`add to journal`** - Prompt for a journal entry then Jarvis will write to a text file with a time stamp.
@@ -124,7 +126,8 @@ Interact with Jarvis by saying or typing the following commands:
 - **`new project`** - Create a new folder in your home directory titled whatever you like.
 - **`memory`** - Use [btop](https://github.com/aristocratos/btop) command (Resource monitor that shows usage and stats for processor, memory, disks, network and processes.)\
      See [btop installation](https://github.com/aristocratos/btop?tab=readme-ov-file#installation), to be able to use this command.
-- **`clear`** - Clear screen
+- **`clear`** - Clear screen.
+- **`advice`** - Jarvis gives you advice.
 - **`definition`** - Get the definition of any word.
 - **`system`** - Prompt for a command that will enter in the terminal.
      *For example:* `ls, echo, rm hello.txt`
