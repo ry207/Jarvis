@@ -100,6 +100,9 @@ Interact with Jarvis by saying or typing the following commands:
 - **`help`** - Shows a list of commands you can either say or type.
 - **`find youtube video`** - Will ask for a search then output youtubes search results.
 - **`shut down`** - Shuts downs the machine.
+- - **`movie`** - Play any media file using this command.
+- **`get video`**  - Download any youtube video via URL.
+- **`add to journal`** - Prompt for a journal entry then Jarvis will write to a text file with a time stamp.
 - **`tell me a fact`** - Tells a random fact.
 - **`stocks`** - List trending stocks.
 - **`what time is it`** - Tells date and time.
@@ -108,8 +111,6 @@ Interact with Jarvis by saying or typing the following commands:
 - **`hack`** - Connect to [Over the wire: Bandit](https://overthewire.org/wargames/bandit/) via ssh for fun hacker challenges.
 - **`terminal`** - ssh into your own computer to access full command prompt capabilities.
 - **`new project`** - Create a new folder in your home directory titled whatever you like.
-- **`movie`** - Play any media file using this command.
-- **`get video`**  - Download any youtube video via URL.
 - **`memory`** - Use [btop](https://github.com/aristocratos/btop) command (Resource monitor that shows usage and stats for processor, memory, disks, network and processes.)\
      See [btop installation](https://github.com/aristocratos/btop?tab=readme-ov-file#installation), to be able to use this command.
 - **`clear`** - Clear screen
@@ -136,7 +137,7 @@ Interact with Jarvis by saying or typing the following commands:
 
 ## Additional Keywords
 ### (see [phrases.py](https://github.com/ry207/Jarvis/blob/main/phrases.py) for the full list of phrases) 
-Jarvis responds to the following keywords:
+Jarvis responds to the following (and more) keywords:
 
 **Greetings:**
 ```
