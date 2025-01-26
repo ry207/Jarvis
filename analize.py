@@ -77,8 +77,7 @@ def analize(voice):
         hour = x.strftime("%I")
         hour = hour.replace("0", "")
         minute = x.strftime("%M")
-        minute = minute.replace("0", "")
-        engine.say(f"Today is {x.strftime("%A")}, {x.strftime("%B")} {x.strftime("%d")}, and it {hour} {minute}, {x.strftime("%p")}")
+        engine.say(f"Today is {x.strftime("%A")}, {x.strftime("%B")} {x.strftime("%d")}, and it is {hour}:{minute} {x.strftime("%p")}")
         engine.runAndWait()
     elif voice in fun:
         os.system("curl ascii.live/can-you-hear-me")
@@ -330,8 +329,7 @@ A broad range of industrial and consumer products use computers as control syste
         hour = x.strftime("%I")
         hour = hour.replace("0", "")
         minute = x.strftime("%M")
-        minute = minute.replace("0", "")
-        engine.say(f"Today is {x.strftime("%A")}, {x.strftime("%B")} {x.strftime("%d")}, and it {hour} {minute}, {x.strftime("%p")}")
+        engine.say(f"Today is {x.strftime("%A")}, {x.strftime("%B")} {x.strftime("%d")}, and it is {hour}:{minute} {x.strftime("%p")}")
         engine.runAndWait()
     elif comm in exit_shutdown:
         engine.say("Goodbye sir")
