@@ -8,7 +8,6 @@ engine = pyttsx3.init()
 def getstocks():
     url  = f"https://investing.com/"
     print(f"searching at: {url}")
-    print("-------------------------------------------------------------------")
     page = requests.get(url).text
     soup = BeautifulSoup(page, "lxml")
     content = soup.find("table", class_="datatable-v2_table__93S4Y dynamic-table-v2_dynamic-table__iz42m datatable-v2_table--mobile-basic__uC0U0 datatable-v2_table--freeze-column__uGXoD datatable-v2_table--freeze-column-first__zMZNN undefined")
