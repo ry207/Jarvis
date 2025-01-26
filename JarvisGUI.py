@@ -136,6 +136,10 @@ class JarvisGUI(QMainWindow):
             engine.runAndWait()
             sys.exit(69)
 
+        elif voice in greetings:
+            engine.say("Hello sir")
+            engine.runAndWait()
+
         elif voice in youtube_phrases:
             engine.say("What YouTube video, sir?")
             engine.runAndWait()
@@ -201,7 +205,7 @@ class JarvisGUI(QMainWindow):
             getpage(sttsearch)
 
         elif voice == "help":
-            print("Commands: help, shut down, tell me a fact, search, download, news, who am I, hack, terminal, movie, get video, research, time, stocks, find youtube video, add to journal, advice")
+            print("Commands: help, shut down, tell me a fact, search, download, news, who am I, hack, terminal, movie, get video, research, time, stocks, find youtube video, add to journal, advice, open camera")
             engine.say("How can i help sir.")
             engine.runAndWait()
 
