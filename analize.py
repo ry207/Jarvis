@@ -4,6 +4,7 @@ import os
 import colorconsole.terminal
 import random
 import datetime
+import wikipedia
 
 
 from wikipage import getpage
@@ -158,7 +159,8 @@ A broad range of industrial and consumer products use computers as control syste
             print("Search: "+r.recognize_google(audio_text))
             try:
                 stt = r.recognize_google(audio_text)
-                analizevoice(stt)
+                results = wikipedia.summary(stt, sentences=2)
+                print(results)
             except:
                 engine.say("Sorry sir, I didn't get that.")
                 engine.runAndWait()
@@ -305,8 +307,8 @@ A broad range of industrial and consumer products use computers as control syste
         engine.say('What word would you like to search?')
         engine.runAndWait()
         search = input("Search: ")
-        sttsearch = search.replace(" ", "_")
-        analizevoice(sttsearch)
+        results = wikipedia.summary(search, sentences=2)
+        print(results)
     elif comm in fun:
         os.system("curl ascii.live/can-you-hear-me")
         os.system("clear")
