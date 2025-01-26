@@ -1,8 +1,8 @@
 # User greetings and responses
 greetings = [
-    "Hello", "hello", "hello Jarvis", "jarvis", "hey Jarvis", 
+    "Hello", "hello", "hello Jarvis", "jarvis", 
     "Jarvis", "come in Jarvis", "hey", "okay Jarvis", "yo", 
-    "hi Jarvis", "sup Jarvis", "hey there", "morning Jarvis"
+    "hi Jarvis", "sup Jarvis", "hey there", "morning Jarvis", "Jarvis", "hey Jarvis"
 ]
 
 # Positive responses
@@ -13,7 +13,7 @@ good = [
     "awesome", "fantastic", "sweet", "perfect", "amazing", "interesting", "very interesting", "pretty cool", "pretty interesting", "interesting stuff", "bet", "alright", "that's fine", "that's alright", "ok", "thanks jar"
 ]
 
-thanks = ["wow thanks Jarvis", "thanks Jarvis", "gee thanks", "gee thanks Jarvis", "thanks jar", "thanks Jar", "thanks a lot", "wow thanks", "thank you so much", "thank you so much Jarvis", "yes thank you", "yup thanks", "thanks"]
+thanks = ["wow thanks Jarvis", "thanks Jarvis", "gee thanks", "gee thanks Jarvis", "thanks jar", "thanks Jar", "thanks a lot", "wow thanks", "thank you so much", "thank you so much Jarvis", "yes thank you", "yup thanks", "thanks", "thank you", "interesting thanks"]
 
 # Asking how Jarvis is
 howis = [
@@ -88,7 +88,7 @@ fun = [
 ]
 
 youtube_phrases = [
-        "find a video", "find me a video", "youtube", "youtube video", "get youtube", "I want to find a youtube video", "I want a youtube video", "find me a youtube video", "find youtube", "search youtube", "search for this video", "find video", "find this video", "find youtube video"
+        "find a video", "find me a video", "youtube", "youtube video", "get youtube", "I want to find a youtube video", "I want a youtube video", "find me a youtube video", "find youtube", "search youtube", "search for this video", "find video", "find this video", "find youtube video", "find Youtube video", "Youtube", "find Youtube", "Youtube video"
 ]
 
 stock_phrases = [
