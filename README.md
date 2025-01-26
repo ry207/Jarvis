@@ -56,6 +56,17 @@ Follow these steps to install and run Jarvis:
    python3 speech.py
    ```
 
+*To run the gui*
+
+1. **Install dependencies**
+   ```bash
+    pip install PyQt5, pyqt5-tools
+   ```
+3. **Run**
+   ```bash
+   python3 JarvisGUI.py
+   ``` 
+
 ## Other required installs
 Requirments that can't be installed using pip:
 1. **mpv**
@@ -73,7 +84,7 @@ Assuming no errors, all dependencies should be installed.
 
 2. **Create an executable for windows:**
    ```bash
-   pyinstaller .\speech.py --onefile -c --icon=favicon.ico --hidden-import=yt-dlp -n Jarvis
+   pyinstaller .\JarvisGUI.py --onefile --icon=favicon.ico --hidden-import yt_dlp.compat._legacy -n JarvisGUI
    ```
    Then locate the dist directory that was created in the main folder, move the executable in the dist directory the the main directory and it should work!
 
