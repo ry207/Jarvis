@@ -69,14 +69,14 @@ time_date = [
     "what time is it", "what's the time", "time", 
     "tell me the time", "current time", "clock", 
     "what's the date", "date please", "todays date", 
-    "what day is it", "day today", "Jarvis time"
+    "what day is it", "day today", "Jarvis time", "give me the time"
 ]
 
 # Exiting or shutting down
 exit_shutdown = [
     "bye", "goodbye", "exit", "close", "shut down", 
     "turn off", "Jarvis bye", "see you later", "I'm leaving", 
-    "end session", "terminate", "power down", "power off", "I'll see you", "see ya", "goodbye Jarvis", "see you Jarvis", "power down", "go to sleep", "die", "kill yourself", "I'll see you later", "see you later Jarvis", "goodnight Jarvis", "goodnight", "good night", "good night Jarivs", "see you tomorrow", "see you tommorow Jarvis", "bye Jarvis", "bye"
+    "end session", "terminate", "power down", "power off", "I'll see you", "see ya", "goodbye Jarvis", "see you Jarvis", "power down", "go to sleep", "die", "kill yourself", "I'll see you later", "see you later Jarvis", "goodnight Jarvis", "goodnight", "good night", "good night Jarivs", "see you tomorrow", "see you tommorow Jarvis", "bye Jarvis", "bye", "night", "night Jar", "night Jarvis", "goodnight Jar", "night jar", "goodnight jar", "see ya tmrw"
 ]
 
 
@@ -86,6 +86,10 @@ fun = [
     "show me something cool", "impress me", "Jarvis do a trick", 
     "what can you do thats fun", "party mode", "Jarvis entertain",
     "tell me a joke", "joke", "make me laugh"
+]
+
+youtube_phrases = [
+        "find a video", "find me a video", "youtube", "youtube video", "get youtube", "I want to find a youtube video", "I want a youtube video", "find me a youtube video", "find youtube", "search youtube", "search for this video", "find video", "find this video"
 ]
 
 stock_phrases = [
@@ -143,7 +147,7 @@ random_facts = [
     "Venus is the only planet in our solar system that spins clockwise.",
     "A group of flamingos is called a 'flamboyance.'",
     "There’s a species of jellyfish that can revert its cells to an earlier stage, making it potentially immortal.",
-    "Humans share about 60% of their DNA with bananas.",
+    "Humans share about 60%  of their DNA with bananas.",
     "The word 'alphabet' comes from the first two letters of the Greek alphabet: alpha and beta.",
     "A bolt of lightning is five times hotter than the surface of the sun.",
     "Penguins propose to their mates by presenting them with a perfect pebble.",
