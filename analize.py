@@ -3,13 +3,14 @@ import speech_recognition as sr
 import os
 import colorconsole.terminal
 import random
+import subprocess as sp
 import datetime
 import wikipedia
+import requests
 
 
 from wikipage import getpage
 from forum import news
-from wiki import analizevoice
 from sshtoself import sshto
 from dictionary import getdef
 from papers import getpapers
@@ -55,11 +56,14 @@ def analize(voice):
     elif voice == "add to journal":
         engine.say("What would you like to write sir.")
         engine.runAndWait()
-        addToJournal()
+        journal_entry = input("Journal Entry: ")
+        addToJournal(journal_entry)
     elif voice == "news":
         news()
         engine.say("Heres the news, sir.")
         engine.runAndWait()
+    elif voice == "open camera":
+        sp.run('start microsoft.windows.camera:', shell=True)
     elif voice == "download":
         engine.say("What page would you like to download: ")
         engine.runAndWait()
@@ -182,7 +186,7 @@ A broad range of industrial and consumer products use computers as control syste
         vf =  input("Name of video file: ")
         engine.say("Enjoy the movie, sir.")
         engine.runAndWait()
-        os.system(f"mpv {vf}")
+        os.system(f"mpv \"{vf}\"")
     elif voice == "get video":
         mov = input("Video or Audio(v/a): ")
         url = input("URL: ")
@@ -204,8 +208,15 @@ A broad range of industrial and consumer products use computers as control syste
         engine.say("What command would you like to run?")
         engine.runAndWait()
         os.system(command)
+    elif voice == "advice":
+        res = requests.get("https://api.adviceslip.com/advice").json()
+        print(res['slip']['advice'])
+        engine.say(f"Heres a piece of advice: {res['slip']['advice']}")
+        engine.runAndWait()
     elif voice == "clear":
         os.system("clear")
+    elif voice == "set alarm":
+        os.system("start ms-clock:")
     elif voice in thanks:
         engine.say("you're welcome sir")
         engine.runAndWait()
@@ -251,7 +262,8 @@ def analizetext(comm):
     elif comm == "add to journal":
         engine.say("What would you like to write sir.")
         engine.runAndWait()
-        addToJournal()
+        journal_entry = input("Journal Entry: ")
+        addToJournal(journal_entry)
     elif comm == "go on":
         engine.runAndWait()
     elif comm == "hack":
@@ -320,6 +332,13 @@ A broad range of industrial and consumer products use computers as control syste
         screen.cprint(6, 0, "\n")
     elif comm == "pause":
         pause = input("")
+    elif comm == "open camera":
+        sp.run('start microsoft.windows.camera:', shell=True)
+    elif comm == "advice":
+        res = requests.get("https://api.adviceslip.com/advice").json()
+        print(res['slip']['advice'])
+        engine.say(f"Heres a piece of advice: {res['slip']['advice']}")
+        engine.runAndWait()
     elif comm == "who am I":
         os.system("curl ifconfig.me/all")
         engine.say("Here is your network data, sir")
@@ -374,7 +393,7 @@ A broad range of industrial and consumer products use computers as control syste
         vf =  input("Name of video file: ")
         engine.say("Enjoy the movie, sir.")
         engine.runAndWait()
-        os.system(f"mpv {vf}")
+        os.system(f"mpv \"{vf}\"")
     elif comm == "get video":
         mov = input("Video or Audio(v/a): ")
         url = input("URL: ")
@@ -387,6 +406,8 @@ A broad range of industrial and consumer products use computers as control syste
             os.system("btop")
         except:
             print("Cannot run this command.")
+    elif comm == "set alarm":
+        os.system("start ms-clock:")
     elif comm == "clear":
         os.system("clear")
     elif comm == "definition":
