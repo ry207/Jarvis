@@ -4,8 +4,6 @@ import os
 import colorconsole.terminal
 import random
 import datetime
-import simpleaudio as sa
-
 
 from wikipage import getpage
 from forum import news
