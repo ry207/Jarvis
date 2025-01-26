@@ -8,6 +8,7 @@ import pyttsx3
 import speech_recognition as sr
 import subprocess as sp
 import requests
+import wikipedia
 
 from wikipage import getpage
 from forum import news
@@ -16,8 +17,6 @@ from phrases import *
 from yahooyt import yaho
 from journal import addToJournal
 from papers import getpapers
-from wiki import analizevoice
-
 
 
 
@@ -28,10 +27,6 @@ engine.setProperty('rate', 190)
 
 # Set Volume
 engine.setProperty('volume', 0.75)
-
-# Set Voice (Female)
-voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[0].id)
 
 
 r = sr.Recognizer()
@@ -219,7 +214,8 @@ class JarvisGUI(QMainWindow):
             engine.say('What word would you like to search?')
             engine.runAndWait()
             stt = self.get_user_input("Wiki search: ")
-            analizevoice(stt)
+            results = wikipedia.summary(stt, sentences=2)
+            print(results)
 
         elif voice == "open camera":
             sp.run('start microsoft.windows.camera:', shell=True)
