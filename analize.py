@@ -199,6 +199,10 @@ A broad range of industrial and consumer products use computers as control syste
         os.system(command)
     elif voice == "clear":
         os.system("clear")
+    elif voice in thanks:
+        engine.say("you're welcome sir")
+        engine.runAndWait()
+        print("You're welcome sir.")
     elif voice == "definition":
         getdef()
     elif voice == "research":
@@ -349,6 +353,10 @@ A broad range of industrial and consumer products use computers as control syste
         engine.say("Goodbye sir")
         engine.runAndWait()
         exit(69)
+    elif comm in thanks:
+        engine.say("you're welcome sir")
+        engine.runAndWait()
+        print("You're welcome sir.")
     elif comm == "movie":
         os.system("ls")
         os.system("dir")
@@ -384,4 +392,3 @@ A broad range of industrial and consumer products use computers as control syste
     else:
         engine.say("Not quite sure what you mean, sir.") 
         engine.runAndWait()
-
