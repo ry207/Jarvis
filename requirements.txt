@@ -1,10 +1,11 @@
 beautifulsoup4
-PyAudio
 SpeechRecognition
+PyAudio
 pyttsx3
 colorconsole
 yt-dlp
 colorama
 requests
 lxml
+wikipedia
 pyinstaller
