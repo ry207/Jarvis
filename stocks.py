@@ -6,21 +6,23 @@ import os
 engine = pyttsx3.init()
 
 def getstocks():
-    url  = f"https://finance.yahoo.com/"
+    url  = f"https://investing.com/"
     print(f"searching at: {url}")
     print("-------------------------------------------------------------------")
     page = requests.get(url).text
     soup = BeautifulSoup(page, "lxml")
-    content = soup.find("ul", class_=" dock yf-pmz4k")
-    blocks = content.find_all('li')
-    for block in reversed(blocks):
-        name = block.find('span', class_="longName yf-pt5nkw")
-        price = block.find('fin-streamer', class_="last-price yf-pt5nkw")
-        percentChange = block.find('fin-streamer', class_="percentChange yf-pt5nkw")
-        print(f"{name.text}")
-        print(f"${price.text}")
-        print(f"{percentChange.text}")
+    content = soup.find("table", class_="datatable-v2_table__93S4Y dynamic-table-v2_dynamic-table__iz42m datatable-v2_table--mobile-basic__uC0U0 datatable-v2_table--freeze-column__uGXoD datatable-v2_table--freeze-column-first__zMZNN undefined")
+
+    
+
+    blocks = content.find_all('tr')
+    for block in blocks:
+        tds = block.find_all('td')
+        for td in (tds):
+            print(td.text)
+        name = block.find('td', class_="datatable-v2_cell__IwP1U !h-auto w-full py-2 mdMax:border-r dynamic-table-v2_col-name__Xhsxv !py-2")
+        price = block.find('td', class_="datatable-v2_cell__IwP1U dynamic-table-v2_col-other__zNU4A text-right rtl:text-right")
+        percentChange = block.find('td', class_="datatable-v2_cell__IwP1U datatable-v2_cell--up__lVyET datatable-v2_cell--bold__cXQUV dynamic-table_col-other__Eu_RC text-right font-bold rtl:text-right")
         print("----------------------------------")
     engine.say(f"{name.text} has a price of {price.text} dollars and regular market change of {percentChange.text}")
     engine.runAndWait()
-
