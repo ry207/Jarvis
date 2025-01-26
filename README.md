@@ -69,7 +69,7 @@ Assuming no errors, all dependencies should be installed.
 
 2. **Create an executable for windows:**
    ```bash
-   pyinstaller .\speech.py --onefile -c
+   pyinstaller .\speech.py --onefile -c --icon=favicon.ico --hidden-import=yt-dlp -n Jarvis
    ```
    Then locate the dist directory that was created in the main folder, move the executable in the dist directory the the main directory and it should work!
 
