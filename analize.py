@@ -17,7 +17,7 @@ from papers import getpapers
 from stocks import getstocks
 from phrases import *
 from yahooyt import yaho
-from journal import addToJournal
+from journal import addToDo, getToDo, addToJournal
 
 # init function to get an engine instance for the speech synthesis 
 engine = pyttsx3.init()
@@ -62,6 +62,11 @@ def analize(voice):
         news()
         engine.say("Heres the news, sir.")
         engine.runAndWait()
+    elif voice == "add to do":
+        engine.say("What do you have to do, sir.")
+        engine.runAndWait()
+        whattodo = input("What do you have to do: ")
+        addToDo(whattodo)
     elif voice == "open camera":
         sp.run('start microsoft.windows.camera:', shell=True)
     elif voice == "download":
@@ -116,8 +121,7 @@ def analize(voice):
         engine.say("Here is your active and running tasks tree, sir")
         engine.runAndWait()
     elif voice in todo != -1:
-        engine.say('Nothing to do sir, lets have a nice day.')
-        engine.runAndWait()
+        getToDo()
     elif voice in greetings != -1:
         engine.say('Hello sir.')
         engine.runAndWait()
@@ -172,7 +176,7 @@ A broad range of industrial and consumer products use computers as control syste
         engine.say("What shall this folder be named")
         engine.runAndWait()
         foldername = input("What should this folder be named: ")
-        os.system(f"mkdir ~/{foldername}")
+        os.system(f"mkdir {foldername}")
     elif voice == "terminal":
         name = input("what's the device name: ")
         engine.say("Goodbye for now sir.")
@@ -195,7 +199,7 @@ A broad range of industrial and consumer products use computers as control syste
         if mov == "v":
             os.system(f"yt-dlp -o \"%(title)s\".mp4 {url}")
     elif voice == "help":
-        print("Commands: help, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute, time, stocks, find youtube video, add to journal")
+        print("Commands: help, shut down, system, tree, random, search, download, joke, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute, time, stocks, find youtube video, add to journal, add to do, what to do")
         engine.say("How can i help sir.")
         engine.runAndWait()
     elif voice == "memory":
@@ -252,8 +256,12 @@ _            _                         _
 
 def analizetext(comm):
     if comm in todo != -1:
-        engine.say('Nothing to do sir, lets have a nice day')
+        getToDo()
+    elif comm == "add to do":
+        engine.say("What do you have to do, sir.")
         engine.runAndWait()
+        whattodo = input("What do you have to do: ")
+        addToDo(whattodo)
     elif comm in youtube_phrases:
         engine.say("what youtube video sir")
         engine.runAndWait()
@@ -357,7 +365,7 @@ A broad range of industrial and consumer products use computers as control syste
         engine.say("What shall this folder be named")
         engine.runAndWait()
         foldername = input("What should this folder be named: ")
-        os.system(f"mkdir ~/{foldername}")
+        os.system(f"mkdir {foldername}")
     elif comm == "terminal":
         name = input("what's the device name: ")
         engine.say("Goodbye for now sir.")
@@ -366,7 +374,7 @@ A broad range of industrial and consumer products use computers as control syste
         engine.say("Welcome back, sir.")
         engine.runAndWait()
     elif comm == "help":
-        print("Commands: help, shut down, system, tree, random, search, download, joke, color, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute, time, stocks, find youtube video, add to journal")
+        print("Commands: help, shut down, system, tree, random, search, download, joke, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute, time, stocks, find youtube video, add to journal, add to do, what to do")
         engine.say("How can i help sir.")
         engine.runAndWait()
     elif comm in time_date:
