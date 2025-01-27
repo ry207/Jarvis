@@ -3,11 +3,14 @@ import requests
 import os
 
 def getpage(voice):
-    url  = f"https://en.wikipedia.org/wiki/{voice}"
-    page = requests.get(url).text
-    soup = BeautifulSoup(page, "lxml")
-    page = soup.find('div', class_='mw-body-content')
-    print(f"URL: {url}")
+    try:
+        url  = f"https://en.wikipedia.org/wiki/{voice}"
+        page = requests.get(url).text
+        soup = BeautifulSoup(page, "lxml")
+        page = soup.find('div', class_='mw-body-content')
+        print(f"URL: {url}")
+    except:
+        print("An Error occured, check your internet.")
     try:
         #f = open(f"WikiPages/{voice}_wikipage.html", "w")
         #f.write(f"Wikipedia page for: {voice}\n\n\n{page}")
