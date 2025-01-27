@@ -114,7 +114,8 @@ Interact with Jarvis by saying or typing the following commands:
 - **`shut down`** - Shuts downs the machine.
 - **`open camera`** - Opens the camera application.
 - **`add to do`** - Add to a text file with date time and task. (read [phrases.py](https://github.com/ry207/Jarvis/blob/main/phrases.py))
-- - ***`get to do`*** - Read from to do list and show if you have anything scheduled today in highlighted text.
+- - ***`get to do`*** - Read from to do list and show if you have anything scheduled today in highlighted text.(read [phrases.py](https://github.com/ry207/Jarvis/blob/main/phrases.py))
+- **`weather`*** - Get weather from current location
 - **`movie`** - Play any media file using this command.
 - **`get video`**  - Download any youtube video via URL.
 - **`add to journal`** - Prompt for a journal entry then Jarvis will write to a text file with a time stamp.
