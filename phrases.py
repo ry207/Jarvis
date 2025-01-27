@@ -2,15 +2,15 @@
 greetings = [
     "Hello", "hello", "hello Jarvis", "jarvis", 
     "Jarvis", "come in Jarvis", "hey", "okay Jarvis", "yo", 
-    "hi Jarvis", "sup Jarvis", "hey there", "morning Jarvis", "Jarvis", "hey Jarvis"
+    "hi Jarvis", "sup Jarvis", "hey there", "morning Jarvis", "Jarvis", "hey Jarvis", "good morning Jarvis", "good morning", "morning", "morning Jarvis", "good afternoon Jarvis", "good afternoon", "good evening Jarvis", "good evening"
 ]
 
 # Positive responses
 good = [
-    "Good", "good", "great", "okay", "okay jarvis", "okay jarvis", "Great", "I'm good", 
-    "i'm good", "i'm good", "i'm okay", "cool", "oh cool", 
+    "Good", "good", "great", "okay", "okay jarvis", "okay jarvis", "Great", "okay good", 
+    "i'm good", "I'm good", "I'm okay", "cool", "oh cool", 
     "cool Jarvis", "nice", "nice Jarvis", "that's cool", 
-    "awesome", "fantastic", "sweet", "perfect", "amazing", "interesting", "very interesting", "pretty cool", "pretty interesting", "interesting stuff", "bet", "alright", "that's fine", "that's alright", "ok", "thanks jar"
+    "awesome", "fantastic", "sweet", "perfect", "amazing", "interesting", "very interesting", "pretty cool", "pretty interesting", "interesting stuff", "bet", "alright", "that's fine", "that's alright", "ok", "that's fantastic"
 ]
 
 thanks = ["wow thanks Jarvis", "thanks Jarvis", "gee thanks", "gee thanks Jarvis", "thanks jar", "thanks Jar", "thanks a lot", "wow thanks", "thank you so much", "thank you so much Jarvis", "yes thank you", "yup thanks", "thanks", "thank you", "interesting thanks"]
@@ -45,7 +45,7 @@ todo = [
     "what to do", "to do", "to do", "Todo", "To Do", 
     "my to do list", "tasks", "tasks for today", 
     "what's on my list", "Jarvis my tasks", "do list", 
-    "Jarvis show tasks", "things to do", "pending tasks"
+    "Jarvis show tasks", "things to do", "pending tasks", "what are my tasks", "what do I have to do today", "what do I got", "do I have anything today", "anything today", "what do I got to do today"
 ]
 
 # New project creation
@@ -53,14 +53,14 @@ new_project = [
     "new project", "project", "start a new project", 
     "Jarvis start a new project", "make a folder", 
     "new folder", "start a project", "create project", 
-    "open new project", "set up project", "project creation"
+    "open new project", "set up project", "project creation", "start a new invention", "invention idea", "I have an idea", "let's start building it", "let's start that", "start making that", "make a folder", "start something new", "make a new project"
 ]
 
 # Asking for jokes
 facts = [
     "tell me a fact", "got any facts", 
     "funny stuff", "fact please","tell something interesting", 
-    "Jarvis fact", "tell me a random fact", "random fact", "fact", "tell me a fact"
+    "Jarvis fact", "tell me a random fact", "random fact", "fact", "tell me a fact", "ideas"
 ]
 
 # Asking for time or date
@@ -68,14 +68,14 @@ time_date = [
     "what time is it", "what's the time", "time", 
     "tell me the time", "current time", "clock", 
     "what's the date", "date please", "todays date", 
-    "what day is it", "day today", "Jarvis time", "give me the time"
+    "what day is it", "day today", "Jarvis time", "give me the time", "what day is it", "what month is it", "what's the date", "month", "date", "give me the time"
 ]
 
 # Exiting or shutting down
 exit_shutdown = [
     "bye", "goodbye", "exit", "close", "shut down", 
     "turn off", "Jarvis bye", "see you later", "I'm leaving", 
-    "end session", "terminate", "power down", "power off", "I'll see you", "see ya", "goodbye Jarvis", "see you Jarvis", "power down", "go to sleep", "die", "kill yourself", "I'll see you later", "see you later Jarvis", "goodnight Jarvis", "goodnight", "good night", "good night Jarivs", "see you tomorrow", "see you tommorow Jarvis", "bye Jarvis", "bye", "night", "night Jar", "night Jarvis", "goodnight Jar", "night jar", "goodnight jar", "see ya tmrw"
+    "end session", "terminate", "power down", "power off", "I'll see you", "see ya", "goodbye Jarvis", "see you Jarvis", "power down", "go to sleep", "die", "kill yourself", "I'll see you later", "see you later Jarvis", "goodnight Jarvis", "goodnight", "good night", "good night Jarivs", "see you tomorrow", "see you tommorow Jarvis", "bye Jarvis", "bye", "night", "night Jar", "night Jarvis", "goodnight Jar", "night jar", "goodnight jar", "see ya tmrw", "un plug", "unplug", "talk to you later"
 ]
 
 
@@ -88,7 +88,7 @@ fun = [
 ]
 
 youtube_phrases = [
-        "find a video", "find me a video", "youtube", "youtube video", "get youtube", "I want to find a youtube video", "I want a youtube video", "find me a youtube video", "find youtube", "search youtube", "search for this video", "find video", "find this video", "find youtube video", "find Youtube video", "Youtube", "find Youtube", "Youtube video"
+        "find a video", "find me a video", "youtube", "youtube video", "get youtube", "I want to find a youtube video", "I want a youtube video", "find me a youtube video", "find youtube", "search youtube", "search for this video", "find video", "find this video", "find youtube video", "find Youtube video", "Youtube", "find Youtube", "Youtube video", "I want to find this video", "im looking for this video"
 ]
 
 stock_phrases = [
@@ -119,7 +119,7 @@ stock_phrases = [
     "stock info",
     "stock data",
     "stock",
-    "what are the stocks"
+    "what are the stocks", "what do the stocks look like", "stock update", "update me on the stocks"
 ]
 
 
