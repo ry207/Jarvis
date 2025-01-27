@@ -18,22 +18,23 @@ from stocks import getstocks
 from phrases import *
 from yahooyt import yaho
 from journal import addToDo, getToDo, addToJournal
+from weather import getWeather
 
-# init function to get an engine instance for the speech synthesis 
+# init function to get an engine instance for the speech synthesis
 engine = pyttsx3.init()
 r = sr.Recognizer()
 
 
 '''
-                            
-                          _                           _      
-                         | |                         | |     
- ___ _ __   ___  ___  ___| |__    _ __ ___   ___   __| | ___ 
+
+                          _                           _
+                         | |                         | |
+ ___ _ __   ___  ___  ___| |__    _ __ ___   ___   __| | ___
 / __| '_ \ / _ \/ _ \/ __| '_ \  | '_ ` _ \ / _ \ / _` |/ _ \
 \__ \ |_) |  __/  __/ (__| | | | | | | | | | (_) | (_| |  __/
 |___/ .__/ \___|\___|\___|_| |_| |_| |_| |_|\___/ \__,_|\___|
-    | |                                                      
-    |_|                                                                                                     
+    | |
+    |_|
 
 '''
 
@@ -58,15 +59,19 @@ def analize(voice):
         engine.runAndWait()
         journal_entry = input("Journal Entry: ")
         addToJournal(journal_entry)
-    elif voice == "news":
+    elif voice in news:
         news()
         engine.say("Heres the news, sir.")
         engine.runAndWait()
-    elif voice == "add to do":
+    elif voice in add_todo_phrases:
         engine.say("What do you have to do, sir.")
         engine.runAndWait()
         whattodo = input("What do you have to do: ")
         addToDo(whattodo)
+    elif voice in weather:
+        os.system("curl ipinfo.io/loc")
+        loc = input("Copy Longitude & Latitude here: ")
+        getWeather(loc)
     elif voice == "open camera":
         sp.run('start microsoft.windows.camera:', shell=True)
     elif voice == "download":
@@ -134,6 +139,12 @@ def analize(voice):
     elif voice in bad != -1:
         engine.say('Sorry, Sir.')
         engine.runAndWait()
+    elif voice in motivation:
+        randnum = random.randrange(0,10)
+        random_mot = motivational_quotes[randnum]
+        engine.say(random_mot)
+        engine.runAndWait()
+        print(random_mot)
     elif voice in function1 != -1:
         engine.say('What word would you like?')
         engine.runAndWait()
@@ -199,7 +210,7 @@ A broad range of industrial and consumer products use computers as control syste
         if mov == "v":
             os.system(f"yt-dlp -o \"%(title)s\".mp4 {url}")
     elif voice == "help":
-        print("Commands: help, shut down, system, tree, random, search, download, joke, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute, time, stocks, find youtube video, add to journal, add to do, what to do")
+        print("Commands: help, shut down, system, tree, random, search, download, joke, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute, time, stocks, find youtube video, add to journal, add to do, what to do, weather")
         engine.say("How can i help sir.")
         engine.runAndWait()
     elif voice == "memory":
@@ -244,14 +255,14 @@ A broad range of industrial and consumer products use computers as control syste
 
 '''
 
-_            _                         _      
-| |          | |                       | |     
-| |_ _____  _| |_   _ __ ___   ___   __| | ___ 
+_            _                         _
+| |          | |                       | |
+| |_ _____  _| |_   _ __ ___   ___   __| | ___
 | __/ _ \ \/ / __| | '_ ` _ \ / _ \ / _` |/ _ \
 | ||  __/>  <| |_  | | | | | | (_) | (_| |  __/
  \__\___/_/\_|___| |_| |_| |_|\___/ \__,_|\___|
-                                               
-                                               
+
+
 
 '''
 
@@ -260,7 +271,7 @@ _            _                         _
 def analizetext(comm):
     if comm in todo != -1:
         getToDo()
-    elif comm == "add to do":
+    elif comm in add_todo_phrases:
         engine.say("What do you have to do, sir.")
         engine.runAndWait()
         whattodo = input("What do you have to do: ")
@@ -277,6 +288,10 @@ def analizetext(comm):
         addToJournal(journal_entry)
     elif comm == "go on":
         engine.runAndWait()
+    elif comm in weather:
+        os.system("curl ipinfo.io/loc")
+        loc = input("Copy Longitude & Latitude here: ")
+        getWeather(loc)
     elif comm == "hack":
         level = input("Select level 0-34: ")
         if level == "0":
@@ -287,7 +302,7 @@ def analizetext(comm):
         engine.runAndWait()
         command = input("What command would you like to run: ")
         os.system(command)
-    elif comm == "news":
+    elif comm in news:
         news()
         engine.say("Heres the news, sir.")
         engine.runAndWait()
@@ -364,6 +379,12 @@ A broad range of industrial and consumer products use computers as control syste
         engine.say(random_fact)
         engine.runAndWait()
         print(random_fact)
+    elif comm in motivation:
+        randnum = random.randrange(0,10)
+        random_mot = motivational_quotes[randnum]
+        engine.say(random_mot)
+        engine.runAndWait()
+        print(random_mot)
     elif comm in new_project != -1:
         engine.say("What shall this folder be named")
         engine.runAndWait()
@@ -377,7 +398,7 @@ A broad range of industrial and consumer products use computers as control syste
         engine.say("Welcome back, sir.")
         engine.runAndWait()
     elif comm == "help":
-        print("Commands: help, shut down, system, tree, random, search, download, joke, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute, time, stocks, find youtube video, add to journal, add to do, what to do")
+        print("Commands: help, shut down, system, tree, random, search, download, joke, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute, time, stocks, find youtube video, add to journal, add to do, what to do, weather")
         engine.say("How can i help sir.")
         engine.runAndWait()
     elif comm in time_date:
@@ -436,5 +457,5 @@ A broad range of industrial and consumer products use computers as control syste
     elif comm in stock_phrases:
         getstocks()
     else:
-        engine.say("Not quite sure what you mean, sir.") 
+        engine.say("Not quite sure what you mean, sir.")
         engine.runAndWait()
