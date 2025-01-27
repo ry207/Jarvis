@@ -226,7 +226,10 @@ A broad range of industrial and consumer products use computers as control syste
         engine.runAndWait()
         print("You're welcome sir.")
     elif voice == "definition":
-        getdef()
+        try:
+            getdef()
+        except:
+            print("An error may have occured, check your spelling or internet.")
     elif voice == "research":
         getpapers()
     elif voice == "execute":
@@ -419,7 +422,10 @@ A broad range of industrial and consumer products use computers as control syste
     elif comm == "clear":
         os.system("clear")
     elif comm == "definition":
-        getdef()
+        try:
+            getdef()
+        except:
+            print("An error may have occured, check your spelling or internet.")
     elif comm == "research":
         getpapers()
     elif comm == "execute":
