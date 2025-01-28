@@ -59,7 +59,7 @@ def analize(voice):
         engine.runAndWait()
         journal_entry = input("Journal Entry: ")
         addToJournal(journal_entry)
-    elif voice in news:
+    elif voice in news_phrases:
         news()
         engine.say("Heres the news, sir.")
         engine.runAndWait()
@@ -302,7 +302,7 @@ def analizetext(comm):
         engine.runAndWait()
         command = input("What command would you like to run: ")
         os.system(command)
-    elif comm in news:
+    elif comm in news_phrases:
         news()
         engine.say("Heres the news, sir.")
         engine.runAndWait()
