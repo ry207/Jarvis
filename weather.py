@@ -1,6 +1,7 @@
 import requests
 import json
 from api import api_key
+# Create file api.py and go to https://tomorrow.io to get an api key
 
 def getWeather(location):
 
