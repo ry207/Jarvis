@@ -1,6 +1,4 @@
 import requests
-import geocoder
-import os
 import json
 from api import api_key
 
