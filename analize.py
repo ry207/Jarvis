@@ -7,6 +7,7 @@ import subprocess as sp
 import datetime
 import wikipedia
 import requests
+import platform
 
 
 from wikipage import getpage
@@ -72,6 +73,16 @@ def analize(voice):
         os.system("curl ipinfo.io/loc")
         loc = input("Copy Longitude & Latitude here: ")
         getWeather(loc)
+    elif voice == "right to file" or voice == "write to file":
+        filename = input("File name(including file type): ")
+        message = input("What to write: ")
+        with open(f"{filename}", "a") as f:
+            f.write(f"{message}")
+            f.close()
+    elif voice == "read file":
+        filename = input("File name: ")
+        with open(f"{filename}", "r") as f:
+            print(f.read())
     elif voice == "open camera":
         sp.run('start microsoft.windows.camera:', shell=True)
     elif voice == "download":
@@ -122,9 +133,12 @@ def analize(voice):
         engine.say("Here is your network data, sir")
         engine.runAndWait()
     elif voice == "tree":
-        os.system("pstree")
-        engine.say("Here is your active and running tasks tree, sir")
-        engine.runAndWait()
+        if platform.system() != "Windows":
+            os.system("pstree")
+            engine.say("Here is your active and running tasks tree, sir")
+            engine.runAndWait()
+        else:
+            print("Cannot run on this device.")
     elif voice in todo != -1:
         getToDo()
     elif voice in greetings != -1:
@@ -196,8 +210,10 @@ A broad range of industrial and consumer products use computers as control syste
         engine.say("Welcome back sir.")
         engine.runAndWait()
     elif voice == "movie":
-        os.system("ls")
-        os.system("dir")
+        if platform.system() == "Windows":
+            os.system("dir")
+        else:
+            os.system("ls")
         vf =  input("Name of video file: ")
         engine.say("Enjoy the movie, sir.")
         engine.runAndWait()
@@ -210,13 +226,19 @@ A broad range of industrial and consumer products use computers as control syste
         if mov == "v":
             os.system(f"yt-dlp -o \"%(title)s\".mp4 {url}")
     elif voice == "help":
-        print("Commands: help, shut down, system, tree, random, search, download, joke, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute, time, stocks, find youtube video, add to journal, add to do, what to do, weather, motivation")
+        print("Commands: help, shut down, system, tree, random, search, download, joke, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute, time, stocks, find youtube video, add to journal, add to do, what to do, weather, motivation, add to file, write to file")
         engine.say("How can i help sir.")
         engine.runAndWait()
+    elif voice in motivation:
+        randnum = random.randrange(0,10)
+        random_mot = motivational_quotes[randnum]
+        engine.say(random_mot)
+        engine.runAndWait()
+        print(random_mot)
     elif voice == "memory":
-        try:
+        if platform.system() == "Windows":
             os.system("btop")
-        except:
+        else:
             print("Cannot run this command.")
     elif voice == "system":
         command = input("What command would you like to run: ")
@@ -231,7 +253,10 @@ A broad range of industrial and consumer products use computers as control syste
     elif voice == "clear":
         os.system("clear")
     elif voice == "set alarm":
-        os.system("start ms-clock:")
+        if platform.system() == "Windows":
+            os.system("start ms-clock:")
+        else:
+            print("Cannot run on this device.")
     elif voice in thanks:
         engine.say("you're welcome sir")
         engine.runAndWait()
@@ -244,10 +269,15 @@ A broad range of industrial and consumer products use computers as control syste
     elif voice == "research":
         getpapers()
     elif voice == "execute":
-        os.system("dir .\Executables\\")
-        os.system("ls Executables/")
+        if platform.system() == "Windows":
+            os.system("dir .\Executables\\")
+        else:
+            os.system("ls Executables/")
         executablename = input("Name of executable: ")
-        os.system(f".\Executables\{executablename}")
+        if platform.system() == "Windows":
+            os.system(f".\Executables\{executablename}")
+        else:
+            os.system(f"./Executables/{executablename}")
     else:
         engine.say("Not quite sure what you mean sir.")
         engine.runAndWait()
@@ -281,11 +311,26 @@ def analizetext(comm):
         engine.runAndWait()
         ytsearch = input("What youtube video would you like to search for: ")
         yaho(ytsearch)
+    elif comm == "set alarm":
+        if platform.system() == "Windows":
+            os.system("start ms-clock:")
+        else:
+            print("Cannot run on this device.")
     elif comm == "add to journal":
         engine.say("What would you like to write sir.")
         engine.runAndWait()
         journal_entry = input("Journal Entry: ")
         addToJournal(journal_entry)
+    elif comm == "right to file" or comm == "write to file":
+        filename = input("File name(including file type): ")
+        message = input("What to write: ")
+        with open(f"{filename}", "a") as f:
+            f.write(f"{message}")
+            f.close()
+    elif comm == "read file":
+        filename = input("File name: ")
+        with open(f"{filename}", "r") as f:
+            print(f.read())
     elif comm == "go on":
         engine.runAndWait()
     elif comm in weather:
@@ -359,7 +404,10 @@ A broad range of industrial and consumer products use computers as control syste
     elif comm == "pause":
         pause = input("")
     elif comm == "open camera":
-        sp.run('start microsoft.windows.camera:', shell=True)
+        if platform.system() == "Windows":
+            sp.run('start microsoft.windows.camera:', shell=True)
+        else:
+            print("Cannot run on this device")
     elif comm == "advice":
         res = requests.get("https://api.adviceslip.com/advice").json()
         print(res['slip']['advice'])
@@ -398,7 +446,7 @@ A broad range of industrial and consumer products use computers as control syste
         engine.say("Welcome back, sir.")
         engine.runAndWait()
     elif comm == "help":
-        print("Commands: help, shut down, system, tree, random, search, download, joke, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute, time, stocks, find youtube video, add to journal, add to do, what to do, weather, motivation")
+        print("Commands: help, shut down, system, tree, random, search, download, joke, news, computer, who am I, hack, terminal, new project, movie, get video, memory, clear, definition, research, execute, time, stocks, find youtube video, add to journal, add to do, what to do, weather, motivation, add to file, write to file")
         engine.say("How can i help sir.")
         engine.runAndWait()
     elif comm in time_date:
@@ -415,13 +463,21 @@ A broad range of industrial and consumer products use computers as control syste
         engine.say("Goodbye sir")
         engine.runAndWait()
         exit(69)
+    elif comm in motivation:
+        randnum = random.randrange(0,10)
+        random_mot = motivational_quotes[randnum]
+        engine.say(random_mot)
+        engine.runAndWait()
+        print(random_mot)
     elif comm in thanks:
         engine.say("you're welcome sir")
         engine.runAndWait()
         print("You're welcome sir.")
     elif comm == "movie":
-        os.system("ls")
-        os.system("dir")
+        if platform.system() == "Windows":
+            os.system("dir")
+        else:
+            os.system("ls")
         vf =  input("Name of video file: ")
         engine.say("Enjoy the movie, sir.")
         engine.runAndWait()
@@ -450,10 +506,15 @@ A broad range of industrial and consumer products use computers as control syste
     elif comm == "research":
         getpapers()
     elif comm == "execute":
-        os.system("dir .\Executables\\")
-        os.system("ls Executables/")
+        if platform.system() == "Windows":
+            os.system("dir .\Executables\\")
+        else:
+            os.system("ls Executables/")
         executablename = input("Name of executable: ")
-        os.system(f".\Executables\{executablename}")
+        if platform.system() == "Windows":
+            os.system(f".\Executables\{executablename}")
+        else:
+            os.system(f"./Executables/{executablename}")
     elif comm in stock_phrases:
         getstocks()
     else:
