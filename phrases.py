@@ -45,7 +45,7 @@ todo = [
     "what to do", "to do", "to do", "Todo", "To Do",
     "my to do list", "tasks", "tasks for today",
     "what's on my list", "Jarvis my tasks", "do list",
-    "Jarvis show tasks", "things to do", "pending tasks", "what are my tasks", "what do I have to do today", "what do I got", "do I have anything today", "anything today", "what do I got to do today","whats on my to do list", "what's on my to do list"
+    "Jarvis show tasks", "things to do", "pending tasks", "what do I have to do today", "what do I got", "do I have anything today", "anything today", "what do I got to do today","whats on my to do list", "what's on my to do list"
 ]
 
 add_todo_phrases = [
@@ -112,10 +112,10 @@ fun = [
 ]
 
 youtube_phrases = [
-        "find a video", "find me a video", "youtube", "youtube video", "get youtube", "I want to find a youtube video", "I want a youtube video", "find me a youtube video", "find youtube", "search youtube", "search for this video", "find video", "find this video", "find youtube video", "find Youtube video", "Youtube", "find Youtube", "Youtube video", "I want to find this video", "im looking for this video", "search youtube"
+        "find a video", "find me a video", "Youtube", "youtube video", "get youtube", "I want to find a Youtube video", "I want a youtube video", "find me a youtube video", "find Youtube", "search youtube", "search for this video", "find video", "find this video", "find youtube video", "find Youtube video", "Youtube", "find Youtube", "Youtube video", "I want to find this video", "im looking for this video", "search youtube"
 ]
 
-news = [
+news_phrases = [
     "what's in the news", "latest news", "current events",
     "Jarvis any news", "tell me the headlines", "update me on the world",
     "news please", "what's happening around the world",
@@ -127,7 +127,7 @@ motivation = [
     "motivate me", "give me some inspiration", "I need motivation",
     "inspire me Jarvis", "say something inspiring", "encourage me",
     "tell me a motivational quote", "lift my spirits",
-    "Jarvis, boost my morale", "give me a pep talk", "motivate me", "motivate me Jarvis", "I need some motivation", "need some motivation", "inspirational quotes", "inspire me", "inspiration", "need a quote"
+    "Jarvis, boost my morale", "give me a pep talk", "motivate me", "motivate me Jarvis", "I need some motivation", "need some motivation", "inspirational quotes", "inspire me", "inspiration", "need a quote", "motivation"
 ]
 
 
@@ -141,7 +141,6 @@ stock_phrases = [
     "Yahoo stocks update",
     "get the latest stocks",
     "current stock market",
-    "what are the stocks today",
     "tell me the stock prices",
     "give me stock info",
     "latest stock updates",
@@ -155,11 +154,9 @@ stock_phrases = [
     "stocks",
     "tell me stocks",
     "stock updates",
-    "what are the stocks",
     "stock info",
     "stock data",
-    "stock",
-    "what are the stocks", "what do the stocks look like", "stock update", "update me on the stocks"
+    "stock", "what do the stocks look like", "stock update", "update me on the stocks"
 ]
 
 # User greetings and responses
@@ -214,7 +211,7 @@ todo.extend([
     "list my tasks", "what do I have", "Jarvis show my tasks",
     "today's tasks", "any new tasks", "pending work",
     "what needs to be done", "what's left to do", "what do I need to finish",
-    "remind me my tasks"
+    "remind me my tasks", "what to do", "what do I got to do"
 ])
 
 # New project creation
@@ -235,7 +232,7 @@ facts.extend([
 time_date.extend([
     "what's the time Jarvis", "tell me what day it is",
     "today's month", "calendar date", "Jarvis what's today",
-    "time check", "tell me the time Jarvis"
+    "time check", "tell me the time Jarvis", "what's the time"
 ])
 
 # Exiting or shutting down
@@ -249,7 +246,7 @@ exit_shutdown.extend([
 weather.extend([
     "what's the forecast", "any weather updates", "how's the weather looking",
     "is it going to rain", "Jarvis weather status", "what's outside like",
-    "do I need an umbrella", "is it cold outside"
+    "do I need an umbrella", "is it cold outside", "what's the weather", "what's the weather like", "what's the weather like outside", "what the weather outside right now", "how is it outside right now", "is it nice outside", "how is it outside"
 ])
 
 # Fun responses
@@ -270,7 +267,7 @@ youtube_phrases.extend([
 stock_phrases.extend([
     "check my stocks", "give me the market update",
     "how's my portfolio", "update me on the market", "latest finance news",
-    "finance check", "market insights", "stock summary"
+    "finance check", "market insights", "stock summary", "get stocks", "get my stocks", "how's Nvidia", "how's Dow Jones", "how's tesla", "how's s and p", "Dow Jones stock", "Nvidia stock"
 ])
 
 
